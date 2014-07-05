@@ -56,6 +56,8 @@
 		5CB46B8E196832A800B66CA7 /* toggle_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B75196832A700B66CA7 /* toggle_off@2x.png */; };
 		5CB46B8F196832A800B66CA7 /* toggle_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B76196832A700B66CA7 /* toggle_on.png */; };
 		5CB46B90196832A800B66CA7 /* toggle_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B77196832A700B66CA7 /* toggle_on@2x.png */; };
+		F56262A2196844E9002A2616 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F562629E196844E9002A2616 /* BaseViewController.m */; };
+		F56262A3196844E9002A2616 /* GeoLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F56262A0196844E9002A2616 /* GeoLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +118,11 @@
 		5CB46B75196832A700B66CA7 /* toggle_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle_off@2x.png"; sourceTree = "<group>"; };
 		5CB46B76196832A700B66CA7 /* toggle_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle_on.png; sourceTree = "<group>"; };
 		5CB46B77196832A700B66CA7 /* toggle_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle_on@2x.png"; sourceTree = "<group>"; };
+		F562629D196844E9002A2616 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F562629E196844E9002A2616 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F562629F196844E9002A2616 /* GeoLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocationManager.h; sourceTree = "<group>"; };
+		F56262A0196844E9002A2616 /* GeoLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocationManager.m; sourceTree = "<group>"; };
+		F56262A1196844E9002A2616 /* MyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +170,11 @@
 		5CB46AC31968138600B66CA7 /* SmartShopperHackathon */ = {
 			isa = PBXGroup;
 			children = (
+				F562629D196844E9002A2616 /* BaseViewController.h */,
+				F562629E196844E9002A2616 /* BaseViewController.m */,
+				F562629F196844E9002A2616 /* GeoLocationManager.h */,
+				F56262A0196844E9002A2616 /* GeoLocationManager.m */,
+				F56262A1196844E9002A2616 /* MyConstants.h */,
 				5CB46ACC1968138600B66CA7 /* AppDelegate.h */,
 				5CB46ACD1968138600B66CA7 /* AppDelegate.m */,
 				5CB46ACF1968138600B66CA7 /* Main.storyboard */,
@@ -363,9 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CB46AD41968138600B66CA7 /* ViewController.m in Sources */,
+				F56262A2196844E9002A2616 /* BaseViewController.m in Sources */,
 				5CB46ACE1968138600B66CA7 /* AppDelegate.m in Sources */,
 				5CB46B0F19681C9F00B66CA7 /* LoginScreenViewController.m in Sources */,
 				5CB46B4719682CDC00B66CA7 /* MainViewController.m in Sources */,
+				F56262A3196844E9002A2616 /* GeoLocationManager.m in Sources */,
 				5CB46ACA1968138600B66CA7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +521,7 @@
 				5CB46AEE1968138600B66CA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

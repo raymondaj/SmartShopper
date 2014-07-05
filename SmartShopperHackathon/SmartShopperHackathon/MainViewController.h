@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "MyConstants.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : BaseViewController
 {
     UIButton * facebookButton;
 }
+
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 - (IBAction)mainMenuButtonTouchUpInside:(id)sender;

@@ -64,7 +64,7 @@
     
     //Generic way to start payments
     UIViewController *vc = [[MyOrder shared] paymentViewControllerForOrder:order forceLogin:true onCompletion:^{
-        [self.navigationController popToRootViewControllerAnimated:YES];
+        [self performSegueWithIdentifier:@"toFinalOfferVC" sender:self];
     }];
     [self.navigationController pushViewController:vc animated:YES];
 

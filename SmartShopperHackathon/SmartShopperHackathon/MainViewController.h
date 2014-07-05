@@ -13,6 +13,7 @@
 @interface MainViewController : BaseViewController
 {
     UIButton * facebookButton;
+    BOOL facebookButtonSelected;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *offerImgView;
 @property (weak, nonatomic) IBOutlet UIImageView *connectedAccountsImg;

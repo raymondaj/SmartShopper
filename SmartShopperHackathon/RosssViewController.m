@@ -30,9 +30,12 @@
     storeDetailsImg = [UIImage imageNamed:@"store_details"];
 //    [self.contentView removeFromSuperview];
     [favStoreButton setImage:storeDetailsImg forState:UIControlStateNormal];
-    [self.contentView addSubview:favStoreButton];
+//    [self.contentView addSubview:favStoreButton];
+    connectionImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ross_content"]];
+    [self.contentView setFrame:CGRectMake(0, 420, 320, connectionImgView.frame.size.height)];
+    [self.contentView addSubview:connectionImgView];
     [self.scrollView addSubview:self.contentView];
-    self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;
+    self.scrollView.contentSize = CGSizeMake(320, 450 + self.contentView.frame.size.height) ;
     
     
     // Do any additional setup after loading the view.

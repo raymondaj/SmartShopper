@@ -12,6 +12,7 @@
 {
     UIButton* favStoreButton;
     UIImage *storeDetailsImg;
+    UIImageView * connectionImgView;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *wishListFrameView;
 @property (weak, nonatomic) IBOutlet UIImageView *storesFrameView;

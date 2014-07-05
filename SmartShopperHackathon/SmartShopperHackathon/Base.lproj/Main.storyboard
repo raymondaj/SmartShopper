@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0YF-in-IH8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0YF-in-IH8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -130,6 +130,27 @@
             </objects>
             <point key="canvasLocation" x="1333" y="150"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="hjQ-yq-rsz">
+            <objects>
+                <viewController id="3XV-wA-rTa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="961-pf-cza">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="final_offer.png" id="s5D-Um-HvA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NpU-cJ-ghI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1i-db-Ehe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="844"/>
+        </scene>
         <!--Offer Detail View Controller-->
         <scene sceneID="3hR-e3-dRc">
             <objects>
@@ -156,6 +177,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="xdK-Nl-Bh0"/>
+                    <connections>
+                        <segue destination="3XV-wA-rTa" kind="push" identifier="toFinalOfferVC" id="Rc9-wq-vIb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uge-sC-LWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,14 +198,14 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="igg-Uz-Nq6">
-                                <rect key="frame" x="-4" y="63" width="328" height="474"/>
+                                <rect key="frame" x="-4" y="63" width="328" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ross_picture.png" id="ZGN-aS-qbh">
                                         <rect key="frame" x="4" y="0.0" width="320" height="268"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="roos_wishlist_frame.png" id="Ob0-US-EbA">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="roos_wishlist_frame.png" id="Ob0-US-EbA">
                                         <rect key="frame" x="4" y="271" width="76" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
@@ -224,7 +248,7 @@
                                             <action selector="menuButtonTouchUpInside:" destination="zlz-WR-Znd" eventType="touchUpInside" id="8Bx-tb-9PR"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="roos_wishlist_frame.png" id="9Vt-Q1-wET">
+                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="roos_wishlist_frame.png" id="9Vt-Q1-wET">
                                         <rect key="frame" x="244" y="271" width="76" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
@@ -295,6 +319,7 @@
         <image name="bg.png" width="320" height="568"/>
         <image name="connected_accounts.png" width="50" height="81"/>
         <image name="connected_accounts_active.png" width="73" height="122"/>
+        <image name="final_offer.png" width="320" height="568"/>
         <image name="frank_image.png" width="320" height="268"/>
         <image name="frank_wishlist.png" width="58" height="67"/>
         <image name="login.png" width="320" height="568"/>

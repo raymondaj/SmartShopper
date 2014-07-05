@@ -78,16 +78,14 @@
 -(IBAction)facebookButtonTouchUpInside:(id)sender
 {
     UIButton* selButton = (UIButton*)sender;
-    if ([selButton isHighlighted]) {
-        [selButton setImage:[UIImage imageNamed:@"toggle_on"] forState:UIControlStateHighlighted];
+    if (facebookButtonSelected == YES) {
         [selButton setImage:[UIImage imageNamed:@"toggle_off"] forState:UIControlStateNormal];
-        [selButton setHighlighted:NO];
-        
+        facebookButtonSelected = NO;
     }
     else
     {
         [selButton setImage:[UIImage imageNamed:@"toggle_on"] forState:UIControlStateNormal];
-        [selButton setHighlighted:YES];
+        facebookButtonSelected = YES;
     }
     
 }

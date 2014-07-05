@@ -14,10 +14,15 @@
 {
     UIButton * facebookButton;
     BOOL facebookButtonSelected;
+    IBOutlet UIButton *backButton;
+    IBOutlet UIView *connectionsView;
+    UIButton* connectedPeopleButton;
+    UIImage *peopleImg;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *offerImgView;
 @property (weak, nonatomic) IBOutlet UIImageView *connectedAccountsImg;
 - (IBAction)forwardButtonTouchUpInside:(id)sender;
+- (IBAction)backButtonTouchUpInside:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;

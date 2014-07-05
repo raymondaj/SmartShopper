@@ -44,6 +44,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="iuf-bq-KOy" userLabel="connectionsView">
+                                <rect key="frame" x="340" y="142" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PbJ-mr-Vl0">
                                 <rect key="frame" x="0.0" y="63" width="328" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -52,6 +57,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="268"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="g6Y-lb-nQJ">
+                                        <rect key="frame" x="15" y="20" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="back_icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonTouchUpInside:" destination="2JO-hw-WdZ" eventType="touchUpInside" id="RzV-Ao-mSa"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7LX-du-Ble">
                                         <rect key="frame" x="16" y="277" width="50" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,7 +133,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="ddi-JX-JMg"/>
                     <connections>
+                        <outlet property="backButton" destination="g6Y-lb-nQJ" id="UIw-cA-wyv"/>
                         <outlet property="connectedAccountsImg" destination="kmd-KQ-Rzz" id="skm-iW-ujg"/>
+                        <outlet property="connectionsView" destination="iuf-bq-KOy" id="biC-kY-aW7"/>
                         <outlet property="contentView" destination="xvo-Tl-OKZ" id="bqY-sh-Bzb"/>
                         <outlet property="offerImgView" destination="NrN-ww-G6n" id="tbc-zV-OCj"/>
                         <outlet property="scrollView" destination="PbJ-mr-Vl0" id="ata-4m-2AP"/>
@@ -197,6 +214,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="mM9-id-ohP" userLabel="connectionView">
+                                <rect key="frame" x="340" y="142" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="zBJ-ez-KTC" userLabel="wishListView">
+                                <rect key="frame" x="340" y="142" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="90d-FE-LMq" userLabel="favoriteStoreView">
+                                <rect key="frame" x="340" y="142" width="160" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="igg-Uz-Nq6">
                                 <rect key="frame" x="-4" y="63" width="328" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -206,7 +238,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="roos_wishlist_frame.png" id="Ob0-US-EbA">
-                                        <rect key="frame" x="4" y="271" width="76" height="143"/>
+                                        <rect key="frame" x="6" y="271" width="76" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZIG-6v-0Oy">
@@ -253,7 +285,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y4i-cN-tNn">
-                                        <rect key="frame" x="252" y="286" width="66" height="79"/>
+                                        <rect key="frame" x="252" y="282" width="66" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="ross_fav_store.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -285,11 +317,14 @@
                     <navigationItem key="navigationItem" id="9bg-ji-V5a"/>
                     <connections>
                         <outlet property="connectionFrameView" destination="Ob0-US-EbA" id="Cl2-9M-SgO"/>
+                        <outlet property="connectionsView" destination="mM9-id-ohP" id="pEA-A1-Rxt"/>
                         <outlet property="contentView" destination="gCO-zc-HIb" id="KR7-hu-o5F"/>
                         <outlet property="favFrameView" destination="Jc8-Kn-EH6" id="W5t-En-EVy"/>
+                        <outlet property="favStoreview" destination="90d-FE-LMq" id="o6X-i5-Jyv"/>
                         <outlet property="scrollView" destination="igg-Uz-Nq6" id="U3c-F4-e5u"/>
                         <outlet property="storesFrameView" destination="9Vt-Q1-wET" id="hLa-gO-wVj"/>
                         <outlet property="wishListFrameView" destination="rFv-Uj-cjd" id="FOG-lr-LN0"/>
+                        <outlet property="wishListview" destination="zBJ-ez-KTC" id="XVZ-q1-3Xj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfi-KL-7cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -316,6 +351,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_icon.png" width="37" height="37"/>
         <image name="bg.png" width="320" height="568"/>
         <image name="connected_accounts.png" width="50" height="81"/>
         <image name="connected_accounts_active.png" width="73" height="122"/>

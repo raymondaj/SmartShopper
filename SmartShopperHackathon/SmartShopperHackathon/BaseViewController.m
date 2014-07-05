@@ -17,12 +17,13 @@
 -(void) pushSystemNotification:(NSDictionary *) beacon{
     NSLog(@"pushLocalNotification");
     
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
     UILocalNotification * localNotif = [[UILocalNotification alloc] init];
     localNotif.alertAction = @"to see the offer";
-    //localNotif.applicationIconBadgeNumber = 1;
+    localNotif.applicationIconBadgeNumber = 1;
     localNotif.alertBody = @"Buy at our store and get 20% off for your wife's birthday gift";
     localNotif.soundName = UILocalNotificationDefaultSoundName;
-    localNotif.fireDate = [NSDate dateWithTimeIntervalSinceNow:1];
+    localNotif.fireDate = [NSDate date];
     
     localNotif.userInfo = beacon;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];

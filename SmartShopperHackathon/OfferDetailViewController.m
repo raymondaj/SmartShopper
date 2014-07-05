@@ -35,6 +35,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)BuyButtonTouchUpInside:(id)sender
+{
+    [self performSegueWithIdentifier:@"" sender:self];
+    
+    
+    
+}
+
 /*
 #pragma mark - Navigation
 

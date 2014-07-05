@@ -7,6 +7,16 @@
 //
 
 #import "OfferDetailViewController.h"
+#import "MOLoginViewController.h"
+#import "MyOrder.h"
+#import "MOProgressHUD.h"
+#import "MORegisterViewController.h"
+#import "MOTransactionViewController.h"
+#import "MOOrder.h"
+#import "UIColor+MOAppearance.h"
+#import "MOProvidersViewController.h"
+#import "MOIdealTransaction.h"
+
 
 @interface OfferDetailViewController ()
 
@@ -35,14 +45,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)BuyButtonTouchUpInside:(id)sender
-{
-    [self performSegueWithIdentifier:@"" sender:self];
-    
-    
-    
-}
-
 /*
 #pragma mark - Navigation
 
@@ -54,4 +56,17 @@
 }
 */
 
+- (IBAction)addToCart:(id)sender {
+    MOOrder *order = [MOOrder new];
+    order.externalOrderId = @"123456";
+    [order addItemWithName:@"CLIC Necklace" price:84.75 quantity:1];
+    [order addItemWithName:@"CLIC 011 Earrings" price:54.75 quantity:1];
+    
+    //Generic way to start payments
+    UIViewController *vc = [[MyOrder shared] paymentViewControllerForOrder:order forceLogin:true onCompletion:^{
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }];
+    [self.navigationController pushViewController:vc animated:YES];
+
+}
 @end

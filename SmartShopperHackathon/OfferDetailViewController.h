@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OfferDetailViewController : UIViewController
+- (IBAction)addToCart:(id)sender;
 
 @end

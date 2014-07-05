@@ -56,6 +56,27 @@
 		5CB46B8E196832A800B66CA7 /* toggle_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B75196832A700B66CA7 /* toggle_off@2x.png */; };
 		5CB46B8F196832A800B66CA7 /* toggle_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B76196832A700B66CA7 /* toggle_on.png */; };
 		5CB46B90196832A800B66CA7 /* toggle_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B77196832A700B66CA7 /* toggle_on@2x.png */; };
+		CFC22B0D1968512F00A06C3A /* acknowledgments.md in Resources */ = {isa = PBXBuildFile; fileRef = CFC22AE81968512F00A06C3A /* acknowledgments.md */; };
+		CFC22B0E1968512F00A06C3A /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22AEF1968512F00A06C3A /* libCardIO.a */; };
+		CFC22B0F1968512F00A06C3A /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = CFC22AF01968512F00A06C3A /* LICENSE.md */; };
+		CFC22B101968512F00A06C3A /* libPayPalMPL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22AF21968512F00A06C3A /* libPayPalMPL.a */; };
+		CFC22B111968512F00A06C3A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFC22AFE1968512F00A06C3A /* LICENSE.txt */; };
+		CFC22B121968512F00A06C3A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFC22B001968512F00A06C3A /* SVProgressHUD.bundle */; };
+		CFC22B131968512F00A06C3A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC22B021968512F00A06C3A /* SVProgressHUD.m */; };
+		CFC22B141968512F00A06C3A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFC22B041968512F00A06C3A /* LICENSE.txt */; };
+		CFC22B151968512F00A06C3A /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC22B061968512F00A06C3A /* TPKeyboardAvoidingCollectionView.m */; };
+		CFC22B161968512F00A06C3A /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC22B081968512F00A06C3A /* TPKeyboardAvoidingScrollView.m */; };
+		CFC22B171968512F00A06C3A /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC22B0A1968512F00A06C3A /* TPKeyboardAvoidingTableView.m */; };
+		CFC22B181968512F00A06C3A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC22B0C1968512F00A06C3A /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		CFC22B1A1968538800A06C3A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B191968538800A06C3A /* AVFoundation.framework */; };
+		CFC22B1C1968539800A06C3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B1B1968539700A06C3A /* QuartzCore.framework */; };
+		CFC22B1E196853A600A06C3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B1D196853A600A06C3A /* Security.framework */; };
+		CFC22B21196853CA00A06C3A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B1F196853CA00A06C3A /* AddressBook.framework */; };
+		CFC22B22196853CA00A06C3A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B20196853CA00A06C3A /* AddressBookUI.framework */; };
+		CFC22B24196853FE00A06C3A /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B23196853FE00A06C3A /* libxml2.2.dylib */; };
+		CFC22B261968541000A06C3A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B251968541000A06C3A /* libz.dylib */; };
+		CFC22B28196854D700A06C3A /* MyOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B27196854D700A06C3A /* MyOrder.framework */; };
+		CFC22B2A1968557600A06C3A /* MyOrder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFC22B291968557600A06C3A /* MyOrder.bundle */; };
 		F56262A2196844E9002A2616 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F562629E196844E9002A2616 /* BaseViewController.m */; };
 		F56262A3196844E9002A2616 /* GeoLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F56262A0196844E9002A2616 /* GeoLocationManager.m */; };
 /* End PBXBuildFile section */
@@ -118,6 +139,49 @@
 		5CB46B75196832A700B66CA7 /* toggle_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle_off@2x.png"; sourceTree = "<group>"; };
 		5CB46B76196832A700B66CA7 /* toggle_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggle_on.png; sourceTree = "<group>"; };
 		5CB46B77196832A700B66CA7 /* toggle_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle_on@2x.png"; sourceTree = "<group>"; };
+		CFC22AE81968512F00A06C3A /* acknowledgments.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acknowledgments.md; sourceTree = "<group>"; };
+		CFC22AE91968512F00A06C3A /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		CFC22AEA1968512F00A06C3A /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		CFC22AEB1968512F00A06C3A /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		CFC22AEC1968512F00A06C3A /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		CFC22AED1968512F00A06C3A /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		CFC22AEE1968512F00A06C3A /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		CFC22AEF1968512F00A06C3A /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		CFC22AF01968512F00A06C3A /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		CFC22AF21968512F00A06C3A /* libPayPalMPL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMPL.a; sourceTree = "<group>"; };
+		CFC22AF31968512F00A06C3A /* PayPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPal.h; sourceTree = "<group>"; };
+		CFC22AF41968512F00A06C3A /* PayPalAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalAddress.h; sourceTree = "<group>"; };
+		CFC22AF51968512F00A06C3A /* PayPalAdvancedPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalAdvancedPayment.h; sourceTree = "<group>"; };
+		CFC22AF61968512F00A06C3A /* PayPalAmounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalAmounts.h; sourceTree = "<group>"; };
+		CFC22AF71968512F00A06C3A /* PayPalInvoiceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalInvoiceData.h; sourceTree = "<group>"; };
+		CFC22AF81968512F00A06C3A /* PayPalInvoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalInvoiceItem.h; sourceTree = "<group>"; };
+		CFC22AF91968512F00A06C3A /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		CFC22AFA1968512F00A06C3A /* PayPalPreapprovalDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPreapprovalDetails.h; sourceTree = "<group>"; };
+		CFC22AFB1968512F00A06C3A /* PayPalReceiverAmounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalReceiverAmounts.h; sourceTree = "<group>"; };
+		CFC22AFC1968512F00A06C3A /* PayPalReceiverPaymentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalReceiverPaymentDetails.h; sourceTree = "<group>"; };
+		CFC22AFE1968512F00A06C3A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CFC22AFF1968512F00A06C3A /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		CFC22B001968512F00A06C3A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		CFC22B011968512F00A06C3A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		CFC22B021968512F00A06C3A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		CFC22B041968512F00A06C3A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CFC22B051968512F00A06C3A /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		CFC22B061968512F00A06C3A /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		CFC22B071968512F00A06C3A /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		CFC22B081968512F00A06C3A /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		CFC22B091968512F00A06C3A /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		CFC22B0A1968512F00A06C3A /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		CFC22B0B1968512F00A06C3A /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		CFC22B0C1968512F00A06C3A /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		CFC22B191968538800A06C3A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CFC22B1B1968539700A06C3A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CFC22B1D196853A600A06C3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CFC22B1F196853CA00A06C3A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CFC22B20196853CA00A06C3A /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		CFC22B23196853FE00A06C3A /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		CFC22B251968541000A06C3A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CFC22B27196854D700A06C3A /* MyOrder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyOrder.framework; path = "../../../../Downloads/MyOrder-Payments-iOS-SDK-master/MyOrder.framework"; sourceTree = "<group>"; };
+		CFC22B291968557600A06C3A /* MyOrder.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MyOrder.bundle; sourceTree = "<group>"; };
 		F562629D196844E9002A2616 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F562629E196844E9002A2616 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		F562629F196844E9002A2616 /* GeoLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocationManager.h; sourceTree = "<group>"; };
@@ -130,9 +194,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB46AC01968138600B66CA7 /* CoreGraphics.framework in Frameworks */,
-				5CB46AC21968138600B66CA7 /* UIKit.framework in Frameworks */,
+				CFC22B28196854D700A06C3A /* MyOrder.framework in Frameworks */,
+				CFC22B24196853FE00A06C3A /* libxml2.2.dylib in Frameworks */,
+				CFC22B261968541000A06C3A /* libz.dylib in Frameworks */,
+				CFC22B1A1968538800A06C3A /* AVFoundation.framework in Frameworks */,
+				CFC22B1C1968539800A06C3A /* QuartzCore.framework in Frameworks */,
+				CFC22B21196853CA00A06C3A /* AddressBook.framework in Frameworks */,
+				CFC22B22196853CA00A06C3A /* AddressBookUI.framework in Frameworks */,
+				CFC22B1E196853A600A06C3A /* Security.framework in Frameworks */,
 				5CB46ABE1968138600B66CA7 /* Foundation.framework in Frameworks */,
+				CFC22B101968512F00A06C3A /* libPayPalMPL.a in Frameworks */,
+				CFC22B0E1968512F00A06C3A /* libCardIO.a in Frameworks */,
+				5CB46AC21968138600B66CA7 /* UIKit.framework in Frameworks */,
+				5CB46AC01968138600B66CA7 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +216,8 @@
 		5CB46AB11968138600B66CA7 = {
 			isa = PBXGroup;
 			children = (
+				CFC22B291968557600A06C3A /* MyOrder.bundle */,
+				CFC22AE61968512F00A06C3A /* external */,
 				5CB46AC31968138600B66CA7 /* SmartShopperHackathon */,
 				5CB46ABC1968138600B66CA7 /* Frameworks */,
 				5CB46ABB1968138600B66CA7 /* Products */,
@@ -159,6 +235,14 @@
 		5CB46ABC1968138600B66CA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFC22B27196854D700A06C3A /* MyOrder.framework */,
+				CFC22B251968541000A06C3A /* libz.dylib */,
+				CFC22B23196853FE00A06C3A /* libxml2.2.dylib */,
+				CFC22B1F196853CA00A06C3A /* AddressBook.framework */,
+				CFC22B20196853CA00A06C3A /* AddressBookUI.framework */,
+				CFC22B1D196853A600A06C3A /* Security.framework */,
+				CFC22B1B1968539700A06C3A /* QuartzCore.framework */,
+				CFC22B191968538800A06C3A /* AVFoundation.framework */,
 				5CB46ABD1968138600B66CA7 /* Foundation.framework */,
 				5CB46ABF1968138600B66CA7 /* CoreGraphics.framework */,
 				5CB46AC11968138600B66CA7 /* UIKit.framework */,
@@ -271,6 +355,80 @@
 			path = "toggle on off for frank";
 			sourceTree = "<group>";
 		};
+		CFC22AE61968512F00A06C3A /* external */ = {
+			isa = PBXGroup;
+			children = (
+				CFC22AE71968512F00A06C3A /* CardIO */,
+				CFC22AF11968512F00A06C3A /* PayPalMPL */,
+				CFC22AFD1968512F00A06C3A /* SVProgressHUD */,
+				CFC22B031968512F00A06C3A /* TPKeyboardAvoiding */,
+			);
+			name = external;
+			path = SmartShopperHackathon/external;
+			sourceTree = "<group>";
+		};
+		CFC22AE71968512F00A06C3A /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				CFC22AE81968512F00A06C3A /* acknowledgments.md */,
+				CFC22AE91968512F00A06C3A /* CardIO.h */,
+				CFC22AEA1968512F00A06C3A /* CardIOCreditCardInfo.h */,
+				CFC22AEB1968512F00A06C3A /* CardIOPaymentViewController.h */,
+				CFC22AEC1968512F00A06C3A /* CardIOPaymentViewControllerDelegate.h */,
+				CFC22AED1968512F00A06C3A /* CardIOView.h */,
+				CFC22AEE1968512F00A06C3A /* CardIOViewDelegate.h */,
+				CFC22AEF1968512F00A06C3A /* libCardIO.a */,
+				CFC22AF01968512F00A06C3A /* LICENSE.md */,
+			);
+			path = CardIO;
+			sourceTree = "<group>";
+		};
+		CFC22AF11968512F00A06C3A /* PayPalMPL */ = {
+			isa = PBXGroup;
+			children = (
+				CFC22AF21968512F00A06C3A /* libPayPalMPL.a */,
+				CFC22AF31968512F00A06C3A /* PayPal.h */,
+				CFC22AF41968512F00A06C3A /* PayPalAddress.h */,
+				CFC22AF51968512F00A06C3A /* PayPalAdvancedPayment.h */,
+				CFC22AF61968512F00A06C3A /* PayPalAmounts.h */,
+				CFC22AF71968512F00A06C3A /* PayPalInvoiceData.h */,
+				CFC22AF81968512F00A06C3A /* PayPalInvoiceItem.h */,
+				CFC22AF91968512F00A06C3A /* PayPalPayment.h */,
+				CFC22AFA1968512F00A06C3A /* PayPalPreapprovalDetails.h */,
+				CFC22AFB1968512F00A06C3A /* PayPalReceiverAmounts.h */,
+				CFC22AFC1968512F00A06C3A /* PayPalReceiverPaymentDetails.h */,
+			);
+			path = PayPalMPL;
+			sourceTree = "<group>";
+		};
+		CFC22AFD1968512F00A06C3A /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CFC22AFE1968512F00A06C3A /* LICENSE.txt */,
+				CFC22AFF1968512F00A06C3A /* SVProgressHUD-Prefix.pch */,
+				CFC22B001968512F00A06C3A /* SVProgressHUD.bundle */,
+				CFC22B011968512F00A06C3A /* SVProgressHUD.h */,
+				CFC22B021968512F00A06C3A /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		CFC22B031968512F00A06C3A /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				CFC22B041968512F00A06C3A /* LICENSE.txt */,
+				CFC22B051968512F00A06C3A /* TPKeyboardAvoidingCollectionView.h */,
+				CFC22B061968512F00A06C3A /* TPKeyboardAvoidingCollectionView.m */,
+				CFC22B071968512F00A06C3A /* TPKeyboardAvoidingScrollView.h */,
+				CFC22B081968512F00A06C3A /* TPKeyboardAvoidingScrollView.m */,
+				CFC22B091968512F00A06C3A /* TPKeyboardAvoidingTableView.h */,
+				CFC22B0A1968512F00A06C3A /* TPKeyboardAvoidingTableView.m */,
+				CFC22B0B1968512F00A06C3A /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				CFC22B0C1968512F00A06C3A /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC22B111968512F00A06C3A /* LICENSE.txt in Resources */,
 				5CB46B8B196832A800B66CA7 /* toggle_knob_on.png in Resources */,
 				5CB46B5A1968327800B66CA7 /* ross_fav_store_active@2x.png in Resources */,
 				5CB46B85196832A800B66CA7 /* on_bg.png in Resources */,
@@ -332,14 +491,18 @@
 				5CB46B7F196832A800B66CA7 /* my_favorite@2x.png in Resources */,
 				5CB46B88196832A800B66CA7 /* on_text@2x.png in Resources */,
 				5CB46B581968327800B66CA7 /* ross_fav@2x.png in Resources */,
+				CFC22B121968512F00A06C3A /* SVProgressHUD.bundle in Resources */,
 				5CB46B86196832A800B66CA7 /* on_bg@2x.png in Resources */,
 				5CB46B83196832A800B66CA7 /* off_text.png in Resources */,
 				5CB46B551968327800B66CA7 /* roos_wishlist@2x.png in Resources */,
 				5CB46B561968327800B66CA7 /* roos_wishlist_active@2x.png in Resources */,
 				5CB46B541968327800B66CA7 /* roos_connection@2x.png in Resources */,
+				CFC22B141968512F00A06C3A /* LICENSE.txt in Resources */,
+				CFC22B2A1968557600A06C3A /* MyOrder.bundle in Resources */,
 				5CB46B7A196832A800B66CA7 /* connected_accounts_active@2x.png in Resources */,
 				5CB46B5B1968327800B66CA7 /* ross_picture@2x.png in Resources */,
 				5CB46B7E196832A800B66CA7 /* frank_wishlist@2x.png in Resources */,
+				CFC22B0D1968512F00A06C3A /* acknowledgments.md in Resources */,
 				5CB46B4319682B3300B66CA7 /* login@2x.png in Resources */,
 				5CB46B531968327800B66CA7 /* fav_products@2x.png in Resources */,
 				5CB46B81196832A800B66CA7 /* off_bg.png in Resources */,
@@ -354,6 +517,7 @@
 				5CB46B591968327800B66CA7 /* ross_fav_store@2x.png in Resources */,
 				5CB46B7D196832A800B66CA7 /* frank_profile_detail@2x.png in Resources */,
 				5CB46B79196832A800B66CA7 /* connected_accounts@2x.png in Resources */,
+				CFC22B0F1968512F00A06C3A /* LICENSE.md in Resources */,
 				5CB46B82196832A800B66CA7 /* off_bg@2x.png in Resources */,
 				5CB46B5C1968327800B66CA7 /* store_details.png in Resources */,
 				5CB46B8C196832A800B66CA7 /* toggle_knob_on@2x.png in Resources */,
@@ -375,10 +539,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CB46AD41968138600B66CA7 /* ViewController.m in Sources */,
+				CFC22B181968512F00A06C3A /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				CFC22B161968512F00A06C3A /* TPKeyboardAvoidingScrollView.m in Sources */,
+				CFC22B151968512F00A06C3A /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				CFC22B131968512F00A06C3A /* SVProgressHUD.m in Sources */,
 				F56262A2196844E9002A2616 /* BaseViewController.m in Sources */,
 				5CB46ACE1968138600B66CA7 /* AppDelegate.m in Sources */,
 				5CB46B0F19681C9F00B66CA7 /* LoginScreenViewController.m in Sources */,
 				5CB46B4719682CDC00B66CA7 /* MainViewController.m in Sources */,
+				CFC22B171968512F00A06C3A /* TPKeyboardAvoidingTableView.m in Sources */,
 				F56262A3196844E9002A2616 /* GeoLocationManager.m in Sources */,
 				5CB46ACA1968138600B66CA7 /* main.m in Sources */,
 			);
@@ -481,9 +650,32 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/d061824/Downloads/MyOrder-Payments-iOS-SDK-master",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartShopperHackathon/SmartShopperHackathon-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${SRCROOT}/MyOrder.framework\"",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "SmartShopperHackathon/SmartShopperHackathon-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartShopperHackathon/external/CardIO",
+					"$(PROJECT_DIR)/SmartShopperHackathon/external/PayPalMPL",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-lPayPalMPL",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,9 +686,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/d061824/Downloads/MyOrder-Payments-iOS-SDK-master",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartShopperHackathon/SmartShopperHackathon-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${SRCROOT}/MyOrder.framework\"",
+				);
 				INFOPLIST_FILE = "SmartShopperHackathon/SmartShopperHackathon-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SmartShopperHackathon/external/CardIO",
+					"$(PROJECT_DIR)/SmartShopperHackathon/external/PayPalMPL",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-lPayPalMPL",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

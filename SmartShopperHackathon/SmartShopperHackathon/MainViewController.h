@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
-
+{
+    UIButton * facebookButton;
+}
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 - (IBAction)mainMenuButtonTouchUpInside:(id)sender;
+
+    
+
 
 @end

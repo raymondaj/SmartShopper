@@ -28,6 +28,10 @@
     [super viewDidLoad];
 
     [self.contentView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"frank_profile_detail"]]];
+    facebookButton = [[UIButton alloc]initWithFrame:CGRectMake(120, 443, 50, 18) ];
+    [facebookButton setImage:[UIImage imageNamed:@"toggle_off"] forState:UIControlStateNormal] ;
+    [facebookButton addTarget:self action:@selector(facebookButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    [self.contentView addSubview:facebookButton];
     self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;
     // Do any additional setup after loading the view.
 }
@@ -48,20 +52,34 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+-(IBAction)facebookButtonTouchUpInside:(id)sender
+{
+    UIButton* selButton = (UIButton*)sender;
+    if ([selButton state] == UIControlStateNormal) {
+        [selButton setImage:[UIImage imageNamed:@"toggle_off"] forState:UIControlStateNormal];
+        [selButton setHighlighted:YES];
+        
+    }
+    else
+    {
+        [selButton setImage:[UIImage imageNamed:@"toggle_on"] forState:UIControlStateNormal];
+        [selButton setHighlighted:NO];
+    }
+    
+}
 - (IBAction)mainMenuButtonTouchUpInside:(id)sender {
     UIButton* selButton = (UIButton*)sender;
     switch ([sender tag]) {
         case 1:
-            if ([selButton isSelected])
-            {
-                [selButton setSelected:NO];
-
+            if ([selButton state] == UIControlStateNormal) {
+                [selButton setImage:[UIImage imageNamed:@"connected_accounts_active"] forState:UIControlStateNormal];
+                [selButton setHighlighted:YES];
+                
             }
             else
             {
-                [selButton setSelected:YES];
-                [selButton setHighlighted:YES];
+                [selButton setImage:[UIImage imageNamed:@"connected_accounts"] forState:UIControlStateHighlighted];
+                [selButton setHighlighted:NO];
             }
         case 2:
             if ([selButton isSelected])

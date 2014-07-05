@@ -26,6 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    favStoreButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 0, 305, 200)];
+    storeDetailsImg = [UIImage imageNamed:@"store_details"];
+//    [self.contentView removeFromSuperview];
+    [favStoreButton setImage:storeDetailsImg forState:UIControlStateNormal];
+    [self.contentView addSubview:favStoreButton];
+    [self.scrollView addSubview:self.contentView];
+    self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -48,23 +57,42 @@
 
 - (IBAction)menuButtonTouchUpInside:(id)sender {
     UIButton* selButton = (UIButton*)sender;
+    [self.contentView removeFromSuperview];
     switch ([sender tag]) {
             case 1:
+                self.wishListFrameView.hidden = YES;
+                self.storesFrameView.hidden = YES;
+                self.favFrameView.hidden = YES;
+                self.connectionFrameView.hidden = NO;
                 break;
             case 2:
+                self.wishListFrameView.hidden = YES;
+                self.storesFrameView.hidden = YES;
+                self.favFrameView.hidden = NO;
+                self.connectionFrameView.hidden = YES;
                 break;
             case 3:
                 self.wishListFrameView.hidden = NO;
                 self.storesFrameView.hidden = YES;
+                self.favFrameView.hidden = YES;
+                self.connectionFrameView.hidden = YES;
                 break;
             case 4:
                 self.wishListFrameView.hidden = YES;
                 self.storesFrameView.hidden = NO;
-                break;
+                self.favFrameView.hidden = YES;
+                self.connectionFrameView.hidden = YES;
+                [self.scrollView addSubview:self.contentView];
+//            self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;            
+            break;
             
             default:
                 break;
         }
 
+}
+
+- (IBAction)backButtonTouchUpInside:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

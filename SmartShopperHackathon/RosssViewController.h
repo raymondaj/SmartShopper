@@ -9,8 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface RosssViewController : UIViewController
+{
+    UIButton* favStoreButton;
+    UIImage *storeDetailsImg;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *wishListFrameView;
 @property (weak, nonatomic) IBOutlet UIImageView *storesFrameView;
+@property (weak, nonatomic) IBOutlet UIImageView *connectionFrameView;
+@property (weak, nonatomic) IBOutlet UIImageView *favFrameView;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 - (IBAction)menuButtonTouchUpInside:(id)sender;
+- (IBAction)backButtonTouchUpInside:(id)sender;
 
 @end

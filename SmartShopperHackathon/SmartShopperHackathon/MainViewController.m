@@ -122,4 +122,7 @@
             break;
     }
 }
+- (IBAction)forwardButtonTouchUpInside:(id)sender {
+    [self performSegueWithIdentifier:@"toRossVC" sender:self];
+}
 @end

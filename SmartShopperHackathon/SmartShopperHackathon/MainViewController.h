@@ -15,6 +15,7 @@
     UIButton * facebookButton;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *connectedAccountsImg;
+- (IBAction)forwardButtonTouchUpInside:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;

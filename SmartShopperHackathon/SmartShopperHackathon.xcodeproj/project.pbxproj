@@ -10,6 +10,10 @@
 		5C0BDC5D1968663A00D5A40D /* connected_accounts_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC5A1968663A00D5A40D /* connected_accounts_active@2x.png */; };
 		5C0BDC5E1968663A00D5A40D /* roos_wishlist_frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC5B1968663A00D5A40D /* roos_wishlist_frame@2x.png */; };
 		5C0BDC621968707900D5A40D /* RosssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BDC611968707900D5A40D /* RosssViewController.m */; };
+		5C0BDC67196879E900D5A40D /* final_offer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC63196879E900D5A40D /* final_offer@2x.png */; };
+		5C0BDC68196879E900D5A40D /* offer_beacon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC64196879E900D5A40D /* offer_beacon@2x.png */; };
+		5C0BDC69196879E900D5A40D /* offer_details@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC65196879E900D5A40D /* offer_details@2x.png */; };
+		5C0BDC6A196879E900D5A40D /* checkout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC66196879E900D5A40D /* checkout@2x.png */; };
 		5CB46ABE1968138600B66CA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46ABD1968138600B66CA7 /* Foundation.framework */; };
 		5CB46AC01968138600B66CA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46ABF1968138600B66CA7 /* CoreGraphics.framework */; };
 		5CB46AC21968138600B66CA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46AC11968138600B66CA7 /* UIKit.framework */; };
@@ -88,6 +92,10 @@
 		5C0BDC5B1968663A00D5A40D /* roos_wishlist_frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "roos_wishlist_frame@2x.png"; sourceTree = "<group>"; };
 		5C0BDC601968707900D5A40D /* RosssViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosssViewController.h; sourceTree = SOURCE_ROOT; };
 		5C0BDC611968707900D5A40D /* RosssViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosssViewController.m; sourceTree = SOURCE_ROOT; };
+		5C0BDC63196879E900D5A40D /* final_offer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "final_offer@2x.png"; sourceTree = "<group>"; };
+		5C0BDC64196879E900D5A40D /* offer_beacon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offer_beacon@2x.png"; sourceTree = "<group>"; };
+		5C0BDC65196879E900D5A40D /* offer_details@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offer_details@2x.png"; sourceTree = "<group>"; };
+		5C0BDC66196879E900D5A40D /* checkout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkout@2x.png"; sourceTree = "<group>"; };
 		5CB46ABA1968138600B66CA7 /* SmartShopperHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopperHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB46ABD1968138600B66CA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CB46ABF1968138600B66CA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -296,6 +304,10 @@
 		5CB46B1019682B3300B66CA7 /* slices */ = {
 			isa = PBXGroup;
 			children = (
+				5C0BDC63196879E900D5A40D /* final_offer@2x.png */,
+				5C0BDC64196879E900D5A40D /* offer_beacon@2x.png */,
+				5C0BDC65196879E900D5A40D /* offer_details@2x.png */,
+				5C0BDC66196879E900D5A40D /* checkout@2x.png */,
 				5C0BDC5A1968663A00D5A40D /* connected_accounts_active@2x.png */,
 				5C0BDC5B1968663A00D5A40D /* roos_wishlist_frame@2x.png */,
 				5CB46B5D196832A700B66CA7 /* 3. Frank Profile */,
@@ -494,6 +506,7 @@
 				5CB46B5A1968327800B66CA7 /* ross_fav_store_active@2x.png in Resources */,
 				5CB46B85196832A800B66CA7 /* on_bg.png in Resources */,
 				5C0BDC5D1968663A00D5A40D /* connected_accounts_active@2x.png in Resources */,
+				5C0BDC67196879E900D5A40D /* final_offer@2x.png in Resources */,
 				5CB46AD61968138600B66CA7 /* Images.xcassets in Resources */,
 				5CB46B571968327800B66CA7 /* ross_content@2x.png in Resources */,
 				5CB46B7B196832A800B66CA7 /* connected_people@2x.png in Resources */,
@@ -529,13 +542,16 @@
 				5CB46B82196832A800B66CA7 /* off_bg@2x.png in Resources */,
 				5CB46B5C1968327800B66CA7 /* store_details.png in Resources */,
 				5CB46B8C196832A800B66CA7 /* toggle_knob_on@2x.png in Resources */,
+				5C0BDC69196879E900D5A40D /* offer_details@2x.png in Resources */,
 				5C0BDC5E1968663A00D5A40D /* roos_wishlist_frame@2x.png in Resources */,
 				5CB46B7C196832A800B66CA7 /* frank_image@2x.png in Resources */,
 				5CB46B80196832A800B66CA7 /* my_favorite_store@2x.png in Resources */,
 				5CB46B8D196832A800B66CA7 /* toggle_off.png in Resources */,
+				5C0BDC68196879E900D5A40D /* offer_beacon@2x.png in Resources */,
 				5CB46B4219682B3300B66CA7 /* bg@2x.png in Resources */,
 				5CB46B84196832A800B66CA7 /* off_text@2x.png in Resources */,
 				5CB46AD11968138600B66CA7 /* Main.storyboard in Resources */,
+				5C0BDC6A196879E900D5A40D /* checkout@2x.png in Resources */,
 				5CB46B87196832A800B66CA7 /* on_text.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

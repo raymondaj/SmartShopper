@@ -194,7 +194,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC22B2C196858D900A06C3A /* MyOrder.framework in Frameworks */,
 				CFC22B24196853FE00A06C3A /* libxml2.2.dylib in Frameworks */,
 				CFC22B261968541000A06C3A /* libz.dylib in Frameworks */,
 				CFC22B1A1968538800A06C3A /* AVFoundation.framework in Frameworks */,
@@ -205,6 +204,7 @@
 				5CB46ABE1968138600B66CA7 /* Foundation.framework in Frameworks */,
 				CFC22B101968512F00A06C3A /* libPayPalMPL.a in Frameworks */,
 				CFC22B0E1968512F00A06C3A /* libCardIO.a in Frameworks */,
+				CFC22B2C196858D900A06C3A /* MyOrder.framework in Frameworks */,
 				5CB46AC21968138600B66CA7 /* UIKit.framework in Frameworks */,
 				5CB46AC01968138600B66CA7 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -216,7 +216,6 @@
 		5CB46AB11968138600B66CA7 = {
 			isa = PBXGroup;
 			children = (
-				CFC22B2B196858D900A06C3A /* MyOrder.framework */,
 				CFC22B291968557600A06C3A /* MyOrder.bundle */,
 				CFC22AE61968512F00A06C3A /* external */,
 				5CB46AC31968138600B66CA7 /* SmartShopperHackathon */,
@@ -236,6 +235,7 @@
 		5CB46ABC1968138600B66CA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFC22B2B196858D900A06C3A /* MyOrder.framework */,
 				CFC22B251968541000A06C3A /* libz.dylib */,
 				CFC22B23196853FE00A06C3A /* libxml2.2.dylib */,
 				CFC22B1F196853CA00A06C3A /* AddressBook.framework */,
@@ -659,7 +659,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"${SRCROOT}/MyOrder.framework\"",
+					"\"${SRCROOT}/MyOrder.framework\"/**",
 				);
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
@@ -695,7 +695,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"${SRCROOT}/MyOrder.framework\"",
+					"\"${SRCROOT}/MyOrder.framework\"/**",
 				);
 				INFOPLIST_FILE = "SmartShopperHackathon/SmartShopperHackathon-Info.plist";
 				LIBRARY_SEARCH_PATHS = (

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <MyOrder/MyOrder.h>
+
 
 @implementation AppDelegate
 
@@ -14,6 +16,12 @@
 {
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    MyOrder *myOrder = [MyOrder shared];
+    myOrder.apiKey = @"36bd8913-bf56-4aa0-9492-49a3240597ea";
+    myOrder.apiSecret = @"12H@c9kT$At";
+    myOrder.environment = MyOrderEnvironmentPlayground;
+    myOrder.URLScheme = @"myorder-sdk";
     
     self.geoLocManagerSingleton = [GeoLocationManager singleton];
     

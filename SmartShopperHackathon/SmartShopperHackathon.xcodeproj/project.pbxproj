@@ -14,6 +14,7 @@
 		5C0BDC68196879E900D5A40D /* offer_beacon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC64196879E900D5A40D /* offer_beacon@2x.png */; };
 		5C0BDC69196879E900D5A40D /* offer_details@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC65196879E900D5A40D /* offer_details@2x.png */; };
 		5C0BDC6A196879E900D5A40D /* checkout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC66196879E900D5A40D /* checkout@2x.png */; };
+		5C0BDC6D196885A700D5A40D /* OfferDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BDC6C196885A700D5A40D /* OfferDetailViewController.m */; };
 		5CB46ABE1968138600B66CA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46ABD1968138600B66CA7 /* Foundation.framework */; };
 		5CB46AC01968138600B66CA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46ABF1968138600B66CA7 /* CoreGraphics.framework */; };
 		5CB46AC21968138600B66CA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46AC11968138600B66CA7 /* UIKit.framework */; };
@@ -96,6 +97,8 @@
 		5C0BDC64196879E900D5A40D /* offer_beacon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offer_beacon@2x.png"; sourceTree = "<group>"; };
 		5C0BDC65196879E900D5A40D /* offer_details@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offer_details@2x.png"; sourceTree = "<group>"; };
 		5C0BDC66196879E900D5A40D /* checkout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkout@2x.png"; sourceTree = "<group>"; };
+		5C0BDC6B196885A700D5A40D /* OfferDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferDetailViewController.h; sourceTree = SOURCE_ROOT; };
+		5C0BDC6C196885A700D5A40D /* OfferDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferDetailViewController.m; sourceTree = SOURCE_ROOT; };
 		5CB46ABA1968138600B66CA7 /* SmartShopperHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopperHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB46ABD1968138600B66CA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CB46ABF1968138600B66CA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -281,6 +284,8 @@
 				5CB46B4619682CDC00B66CA7 /* MainViewController.m */,
 				5C0BDC601968707900D5A40D /* RosssViewController.h */,
 				5C0BDC611968707900D5A40D /* RosssViewController.m */,
+				5C0BDC6B196885A700D5A40D /* OfferDetailViewController.h */,
+				5C0BDC6C196885A700D5A40D /* OfferDetailViewController.m */,
 				5CB46AD21968138600B66CA7 /* ViewController.h */,
 				5CB46AD31968138600B66CA7 /* ViewController.m */,
 				5CB46AD51968138600B66CA7 /* Images.xcassets */,
@@ -571,6 +576,7 @@
 				F56262A2196844E9002A2616 /* BaseViewController.m in Sources */,
 				5CB46ACE1968138600B66CA7 /* AppDelegate.m in Sources */,
 				5C0BDC621968707900D5A40D /* RosssViewController.m in Sources */,
+				5C0BDC6D196885A700D5A40D /* OfferDetailViewController.m in Sources */,
 				5CB46B0F19681C9F00B66CA7 /* LoginScreenViewController.m in Sources */,
 				5CB46B4719682CDC00B66CA7 /* MainViewController.m in Sources */,
 				CFC22B171968512F00A06C3A /* TPKeyboardAvoidingTableView.m in Sources */,

@@ -47,6 +47,15 @@
     NSString *msg = [NSString stringWithFormat:@"%@, %@, %@, %@", notificationCenterMessage [@"ALERT_BODY"],  notificationCenterMessage[UUID_STRING] , notificationCenterMessage[MAJOR_STRING] , notificationCenterMessage [MINOR_STRING]];
     
     NSLog(@"%@", msg);
+    UIButton* offerButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
+    [offerButton addTarget:self action:@selector(offerButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    [offerButton setImage:[UIImage imageNamed:@"offer_beacon"] forState:UIControlStateNormal];
+    [self.view addSubview:offerButton];
+    
+}
+-(IBAction)offerButtonTouchUpInside:(id)sender
+{
+    [self performSegueWithIdentifier:@"toOfferDetailsVC" sender:self];
 }
 
 

@@ -40,6 +40,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="offer_beacon.png" id="NrN-ww-G6n">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PbJ-mr-Vl0">
                                 <rect key="frame" x="0.0" y="63" width="328" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -116,13 +120,36 @@
                     <connections>
                         <outlet property="connectedAccountsImg" destination="kmd-KQ-Rzz" id="skm-iW-ujg"/>
                         <outlet property="contentView" destination="xvo-Tl-OKZ" id="bqY-sh-Bzb"/>
+                        <outlet property="offerImgView" destination="NrN-ww-G6n" id="tbc-zV-OCj"/>
                         <outlet property="scrollView" destination="PbJ-mr-Vl0" id="ata-4m-2AP"/>
                         <segue destination="zlz-WR-Znd" kind="push" identifier="toRossVC" id="sxN-kc-AYY"/>
+                        <segue destination="Bpc-61-3Ye" kind="push" identifier="toOfferDetailsVC" id="BKQ-o8-qIm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLu-ag-Qw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043" y="144"/>
+            <point key="canvasLocation" x="1333" y="150"/>
+        </scene>
+        <!--Offer Detail View Controller-->
+        <scene sceneID="3hR-e3-dRc">
+            <objects>
+                <viewController id="Bpc-61-3Ye" customClass="OfferDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qvy-3b-Qqi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="offer_details.png" id="hP5-Ol-G8P">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xdK-Nl-Bh0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uge-sC-LWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="811"/>
         </scene>
         <!--Rosss View Controller-->
         <scene sceneID="vkb-Il-uoG">
@@ -233,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfi-KL-7cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="97"/>
+            <point key="canvasLocation" x="1797" y="150"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Qa-sg-hae">
@@ -263,6 +290,8 @@
         <image name="login.png" width="320" height="568"/>
         <image name="my_favorite.png" width="54" height="61"/>
         <image name="my_favorite_store.png" width="54" height="79"/>
+        <image name="offer_beacon.png" width="320" height="568"/>
+        <image name="offer_details.png" width="320" height="568"/>
         <image name="roos_connection.png" width="52" height="81"/>
         <image name="roos_wishlist.png" width="58" height="80"/>
         <image name="roos_wishlist_frame.png" width="76" height="143"/>

@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+#import "BaseViewController.h"
+#import "MyConstants.h"
+
+@interface MainViewController : BaseViewController
 
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;

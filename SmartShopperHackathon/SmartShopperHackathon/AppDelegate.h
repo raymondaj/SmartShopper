@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GeoLocationManager.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) GeoLocationManager *geoLocManagerSingleton;;
+
+- (void) resetDemo;
 
 @property (strong, nonatomic) UIWindow *window;
 

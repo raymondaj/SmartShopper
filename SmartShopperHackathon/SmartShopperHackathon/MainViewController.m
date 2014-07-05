@@ -27,10 +27,23 @@
 {
     [super viewDidLoad];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(processNotificationCenterForBeacon:)
+                                                 name:@"BEACONS_NOTIF_CENTER"
+                                               object:nil];
+
     [self.contentView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"frank_profile_detail"]]];
     self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;
     // Do any additional setup after loading the view.
 }
+
+- (void) processNotificationCenterForBeacon:(NSNotification *) notification{
+    NSDictionary *notificationCenterMessage = notification.userInfo;
+    NSString *msg = [NSString stringWithFormat:@"%@, %@, %@, %@", notificationCenterMessage [@"ALERT_BODY"],  notificationCenterMessage[UUID_STRING] , notificationCenterMessage[MAJOR_STRING] , notificationCenterMessage [MINOR_STRING]];
+    
+    NSLog(@"%@", msg);
+}
+
 
 - (void)didReceiveMemoryWarning
 {

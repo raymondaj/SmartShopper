@@ -26,20 +26,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    backButton.hidden = YES;
     self.connectedAccountsImg.hidden = YES;
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(processNotificationCenterForBeacon:)
                                                  name:@"BEACONS_NOTIF_CENTER"
                                                object:nil];
+    [self  showPersonalProfile];
+    connectedPeopleButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 40, 305, 163)];
+    peopleImg = [UIImage imageNamed:@"connected_people"];
+    [connectedPeopleButton setImage:peopleImg forState:UIControlStateNormal];
+    [connectedPeopleButton addTarget:self action:@selector(connectedPeopleButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
 
+    // Do any additional setup after loading the view.
+}
+-(void)showPersonalProfile
+{
+    [self.contentView removeFromSuperview];
+    self.contentView = [[UIView alloc]initWithFrame:CGRectMake(0, 400, 320, 1000) ];
     [self.contentView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"frank_profile_detail"]]];
     facebookButton = [[UIButton alloc]initWithFrame:CGRectMake(120, 443, 50, 18) ];
     [facebookButton setImage:[UIImage imageNamed:@"toggle_off"] forState:UIControlStateNormal] ;
     [facebookButton addTarget:self action:@selector(facebookButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-
+    
     [self.contentView addSubview:facebookButton];
+    [self.scrollView addSubview:self.contentView];
     self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;
-    // Do any additional setup after loading the view.
+    self.connectedAccountsImg.hidden = YES;
 }
 
 - (void) processNotificationCenterForBeacon:(NSNotification *) notification{
@@ -96,17 +111,17 @@
 
 - (IBAction)mainMenuButtonTouchUpInside:(id)sender {
     UIButton* selButton = (UIButton*)sender;
-    UIButton* connectedPeopleButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 80, 305, 82)];
-    UIImage *peopleImg = [UIImage imageNamed:@"connected_people"];
+    backButton.hidden = NO;
     switch ([sender tag]) {
         case 1:
             self.connectedAccountsImg.hidden = NO;
-            [[self contentView] removeFromSuperview];
-            self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 380, 320, 800)];
-            [connectedPeopleButton setImage:peopleImg forState:UIControlStateNormal];
-        [connectedPeopleButton addTarget:self action:@selector(connectedPeopleButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+            [self.contentView removeFromSuperview];
+            self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 330, 320, connectedPeopleButton.frame.size.height +10)];
+
             [self.contentView addSubview:connectedPeopleButton];
-            [self.view addSubview:self.contentView];
+            [self.scrollView addSubview:self.contentView];
+    self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;
+            
         case 2:
             if ([selButton isSelected])
                 [selButton setSelected:NO];
@@ -131,5 +146,11 @@
 }
 - (IBAction)forwardButtonTouchUpInside:(id)sender {
     [self performSegueWithIdentifier:@"toRossVC" sender:self];
+}
+
+- (IBAction)backButtonTouchUpInside:(id)sender {
+    [self showPersonalProfile];
+    backButton.hidden = YES;
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

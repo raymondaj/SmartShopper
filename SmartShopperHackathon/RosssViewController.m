@@ -28,17 +28,24 @@
     [super viewDidLoad];
     favStoreButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 0, 305, 200)];
     storeDetailsImg = [UIImage imageNamed:@"store_details"];
-//    [self.contentView removeFromSuperview];
     [favStoreButton setImage:storeDetailsImg forState:UIControlStateNormal];
-//    [self.contentView addSubview:favStoreButton];
-    connectionImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ross_content"]];
-    [self.contentView setFrame:CGRectMake(0, 420, 320, connectionImgView.frame.size.height)];
-    [self.contentView addSubview:connectionImgView];
-    [self.scrollView addSubview:self.contentView];
-    self.scrollView.contentSize = CGSizeMake(320, 450 + self.contentView.frame.size.height) ;
+
+    connectionsView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ross_content"]];
+    wishListview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fav_products"]];
+    favStoreview   = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"store_details"]];
+    [self  addToContentView:connectionsView];
     
     
     // Do any additional setup after loading the view.
+}
+-(void)addToContentView:(UIView*)view
+{
+    [self.contentView removeFromSuperview];
+    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(5, 420, view.frame.size.width, view.frame.size.height)];//;
+    [self.contentView addSubview:view];
+    [self.scrollView addSubview:self.contentView];
+    self.scrollView.contentSize = CGSizeMake(320, 450 + self.contentView.frame.size.height) ;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,6 +74,7 @@
                 self.storesFrameView.hidden = YES;
                 self.favFrameView.hidden = YES;
                 self.connectionFrameView.hidden = NO;
+                [self  addToContentView:connectionsView];
                 break;
             case 2:
                 self.wishListFrameView.hidden = YES;
@@ -79,14 +87,15 @@
                 self.storesFrameView.hidden = YES;
                 self.favFrameView.hidden = YES;
                 self.connectionFrameView.hidden = YES;
+                [self  addToContentView:wishListview];
                 break;
             case 4:
                 self.wishListFrameView.hidden = YES;
                 self.storesFrameView.hidden = NO;
                 self.favFrameView.hidden = YES;
                 self.connectionFrameView.hidden = YES;
-                [self.scrollView addSubview:self.contentView];
-//            self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;            
+            [favStoreview setFrame:CGRectMake(favStoreview.frame.origin.x, favStoreview.frame.origin.y, 305, 275)];
+                [self  addToContentView:favStoreview];
             break;
             
             default:

@@ -43,7 +43,7 @@
     }
    
     //option1: display alert
-    [self displayAlert:notification];
+    //[self displayAlert:notification];
     
     //option2: push event to notification center
     [self pushNotificationCenter:notification];

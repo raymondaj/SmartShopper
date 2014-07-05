@@ -51,7 +51,7 @@
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7LX-du-Ble">
                                         <rect key="frame" x="16" y="277" width="50" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="connected_accounts.png">
+                                        <state key="normal" image="connected_accounts.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="selected" backgroundImage="connected_accounts_active.png"/>
@@ -59,10 +59,14 @@
                                             <action selector="mainMenuButtonTouchUpInside:" destination="2JO-hw-WdZ" eventType="touchUpInside" id="oLc-81-UfD"/>
                                         </connections>
                                     </button>
+                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="connected_accounts_active.png" id="kmd-KQ-Rzz">
+                                        <rect key="frame" x="5" y="270" width="73" height="122"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qL7-Do-OBb">
-                                        <rect key="frame" x="90" y="287" width="55" height="61"/>
+                                        <rect key="frame" x="91" y="287" width="54" height="61"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="my_favorite.png">
+                                        <state key="normal" image="my_favorite.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -72,7 +76,7 @@
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bTf-n9-S5h">
                                         <rect key="frame" x="179" y="279" width="58" height="67"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="frank_wishlist.png">
+                                        <state key="normal" image="frank_wishlist.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -80,9 +84,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="945-et-ha0">
-                                        <rect key="frame" x="259" y="279" width="55" height="79"/>
+                                        <rect key="frame" x="260" y="279" width="54" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" backgroundImage="my_favorite_store.png">
+                                        <state key="normal" image="my_favorite_store.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -101,13 +105,104 @@
                     </view>
                     <navigationItem key="navigationItem" id="ddi-JX-JMg"/>
                     <connections>
+                        <outlet property="connectedAccountsImg" destination="kmd-KQ-Rzz" id="skm-iW-ujg"/>
                         <outlet property="contentView" destination="xvo-Tl-OKZ" id="bqY-sh-Bzb"/>
                         <outlet property="scrollView" destination="PbJ-mr-Vl0" id="ata-4m-2AP"/>
+                        <segue destination="zlz-WR-Znd" kind="push" identifier="toRossVC" id="sxN-kc-AYY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLu-ag-Qw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1166" y="120"/>
+            <point key="canvasLocation" x="1043" y="144"/>
+        </scene>
+        <!--Rosss View Controller-->
+        <scene sceneID="vkb-Il-uoG">
+            <objects>
+                <viewController id="zlz-WR-Znd" customClass="RosssViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZc-ra-kHI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bg.png" id="qMr-9e-7Db">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="igg-Uz-Nq6">
+                                <rect key="frame" x="-4" y="63" width="328" height="474"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ross_picture.png" id="ZGN-aS-qbh">
+                                        <rect key="frame" x="4" y="0.0" width="320" height="268"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZIG-6v-0Oy">
+                                        <rect key="frame" x="16" y="280" width="50" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="roos_connection.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="connected_accounts_active.png"/>
+                                        <connections>
+                                            <action selector="menuButtonTouchUpInside:" destination="zlz-WR-Znd" eventType="touchUpInside" id="swY-7c-sSS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fvD-TL-A5i">
+                                        <rect key="frame" x="91" y="290" width="54" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ross_fav.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTouchUpInside:" destination="zlz-WR-Znd" eventType="touchUpInside" id="o1g-Ol-GuS"/>
+                                        </connections>
+                                    </button>
+                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="roos_wishlist_frame.png" id="rFv-Uj-cjd">
+                                        <rect key="frame" x="166" y="271" width="76" height="143"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U2A-Jx-UuK">
+                                        <rect key="frame" x="179" y="282" width="58" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="roos_wishlist.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTouchUpInside:" destination="zlz-WR-Znd" eventType="touchUpInside" id="8Bx-tb-9PR"/>
+                                        </connections>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="roos_wishlist_frame.png" id="9Vt-Q1-wET">
+                                        <rect key="frame" x="244" y="271" width="76" height="143"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y4i-cN-tNn">
+                                        <rect key="frame" x="252" y="286" width="66" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="ross_fav_store.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuButtonTouchUpInside:" destination="zlz-WR-Znd" eventType="touchUpInside" id="2vk-Dt-jIN"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" id="gCO-zc-HIb">
+                                        <rect key="frame" x="0.0" y="399" width="320" height="1100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9bg-ji-V5a"/>
+                    <connections>
+                        <outlet property="storesFrameView" destination="9Vt-Q1-wET" id="hLa-gO-wVj"/>
+                        <outlet property="wishListFrameView" destination="rFv-Uj-cjd" id="FOG-lr-LN0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfi-KL-7cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1507" y="97"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Qa-sg-hae">
@@ -137,6 +232,12 @@
         <image name="login.png" width="320" height="568"/>
         <image name="my_favorite.png" width="54" height="61"/>
         <image name="my_favorite_store.png" width="54" height="79"/>
+        <image name="roos_connection.png" width="52" height="81"/>
+        <image name="roos_wishlist.png" width="58" height="80"/>
+        <image name="roos_wishlist_frame.png" width="76" height="143"/>
+        <image name="ross_fav.png" width="52" height="71"/>
+        <image name="ross_fav_store.png" width="66" height="79"/>
+        <image name="ross_picture.png" width="320" height="268"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

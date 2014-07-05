@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0BDC5D1968663A00D5A40D /* connected_accounts_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC5A1968663A00D5A40D /* connected_accounts_active@2x.png */; };
+		5C0BDC5E1968663A00D5A40D /* roos_wishlist_frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0BDC5B1968663A00D5A40D /* roos_wishlist_frame@2x.png */; };
+		5C0BDC621968707900D5A40D /* RosssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0BDC611968707900D5A40D /* RosssViewController.m */; };
 		5CB46ABE1968138600B66CA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46ABD1968138600B66CA7 /* Foundation.framework */; };
 		5CB46AC01968138600B66CA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46ABF1968138600B66CA7 /* CoreGraphics.framework */; };
 		5CB46AC21968138600B66CA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB46AC11968138600B66CA7 /* UIKit.framework */; };
@@ -33,7 +36,6 @@
 		5CB46B5C1968327800B66CA7 /* store_details.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B521968327800B66CA7 /* store_details.png */; };
 		5CB46B78196832A800B66CA7 /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B5E196832A700B66CA7 /* back_icon@2x.png */; };
 		5CB46B79196832A800B66CA7 /* connected_accounts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B5F196832A700B66CA7 /* connected_accounts@2x.png */; };
-		5CB46B7A196832A800B66CA7 /* connected_accounts_active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B60196832A700B66CA7 /* connected_accounts_active@2x.png */; };
 		5CB46B7B196832A800B66CA7 /* connected_people@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B61196832A700B66CA7 /* connected_people@2x.png */; };
 		5CB46B7C196832A800B66CA7 /* frank_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B62196832A700B66CA7 /* frank_image@2x.png */; };
 		5CB46B7D196832A800B66CA7 /* frank_profile_detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CB46B63196832A700B66CA7 /* frank_profile_detail@2x.png */; };
@@ -82,6 +84,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0BDC5A1968663A00D5A40D /* connected_accounts_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connected_accounts_active@2x.png"; sourceTree = "<group>"; };
+		5C0BDC5B1968663A00D5A40D /* roos_wishlist_frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "roos_wishlist_frame@2x.png"; sourceTree = "<group>"; };
+		5C0BDC601968707900D5A40D /* RosssViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RosssViewController.h; sourceTree = SOURCE_ROOT; };
+		5C0BDC611968707900D5A40D /* RosssViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RosssViewController.m; sourceTree = SOURCE_ROOT; };
 		5CB46ABA1968138600B66CA7 /* SmartShopperHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShopperHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB46ABD1968138600B66CA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5CB46ABF1968138600B66CA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,7 +122,6 @@
 		5CB46B521968327800B66CA7 /* store_details.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store_details.png; sourceTree = "<group>"; };
 		5CB46B5E196832A700B66CA7 /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
 		5CB46B5F196832A700B66CA7 /* connected_accounts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connected_accounts@2x.png"; sourceTree = "<group>"; };
-		5CB46B60196832A700B66CA7 /* connected_accounts_active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connected_accounts_active@2x.png"; sourceTree = "<group>"; };
 		5CB46B61196832A700B66CA7 /* connected_people@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "connected_people@2x.png"; sourceTree = "<group>"; };
 		5CB46B62196832A700B66CA7 /* frank_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frank_image@2x.png"; sourceTree = "<group>"; };
 		5CB46B63196832A700B66CA7 /* frank_profile_detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "frank_profile_detail@2x.png"; sourceTree = "<group>"; };
@@ -254,6 +259,7 @@
 		5CB46AC31968138600B66CA7 /* SmartShopperHackathon */ = {
 			isa = PBXGroup;
 			children = (
+				5CB46ACF1968138600B66CA7 /* Main.storyboard */,
 				F562629D196844E9002A2616 /* BaseViewController.h */,
 				F562629E196844E9002A2616 /* BaseViewController.m */,
 				F562629F196844E9002A2616 /* GeoLocationManager.h */,
@@ -261,13 +267,14 @@
 				F56262A1196844E9002A2616 /* MyConstants.h */,
 				5CB46ACC1968138600B66CA7 /* AppDelegate.h */,
 				5CB46ACD1968138600B66CA7 /* AppDelegate.m */,
-				5CB46ACF1968138600B66CA7 /* Main.storyboard */,
-				5CB46B4519682CDC00B66CA7 /* MainViewController.h */,
-				5CB46B4619682CDC00B66CA7 /* MainViewController.m */,
-				5CB46AD21968138600B66CA7 /* ViewController.h */,
-				5CB46AD31968138600B66CA7 /* ViewController.m */,
 				5CB46B0D19681C9F00B66CA7 /* LoginScreenViewController.h */,
 				5CB46B0E19681C9F00B66CA7 /* LoginScreenViewController.m */,
+				5CB46B4519682CDC00B66CA7 /* MainViewController.h */,
+				5CB46B4619682CDC00B66CA7 /* MainViewController.m */,
+				5C0BDC601968707900D5A40D /* RosssViewController.h */,
+				5C0BDC611968707900D5A40D /* RosssViewController.m */,
+				5CB46AD21968138600B66CA7 /* ViewController.h */,
+				5CB46AD31968138600B66CA7 /* ViewController.m */,
 				5CB46AD51968138600B66CA7 /* Images.xcassets */,
 				5CB46B1019682B3300B66CA7 /* slices */,
 				5CB46AC41968138600B66CA7 /* Supporting Files */,
@@ -289,6 +296,8 @@
 		5CB46B1019682B3300B66CA7 /* slices */ = {
 			isa = PBXGroup;
 			children = (
+				5C0BDC5A1968663A00D5A40D /* connected_accounts_active@2x.png */,
+				5C0BDC5B1968663A00D5A40D /* roos_wishlist_frame@2x.png */,
 				5CB46B5D196832A700B66CA7 /* 3. Frank Profile */,
 				5CB46B481968327800B66CA7 /* Ross Profile */,
 				5CB46B2919682B3300B66CA7 /* bg@2x.png */,
@@ -320,7 +329,6 @@
 			children = (
 				5CB46B5E196832A700B66CA7 /* back_icon@2x.png */,
 				5CB46B5F196832A700B66CA7 /* connected_accounts@2x.png */,
-				5CB46B60196832A700B66CA7 /* connected_accounts_active@2x.png */,
 				5CB46B61196832A700B66CA7 /* connected_people@2x.png */,
 				5CB46B62196832A700B66CA7 /* frank_image@2x.png */,
 				5CB46B63196832A700B66CA7 /* frank_profile_detail@2x.png */,
@@ -485,6 +493,7 @@
 				5CB46B8B196832A800B66CA7 /* toggle_knob_on.png in Resources */,
 				5CB46B5A1968327800B66CA7 /* ross_fav_store_active@2x.png in Resources */,
 				5CB46B85196832A800B66CA7 /* on_bg.png in Resources */,
+				5C0BDC5D1968663A00D5A40D /* connected_accounts_active@2x.png in Resources */,
 				5CB46AD61968138600B66CA7 /* Images.xcassets in Resources */,
 				5CB46B571968327800B66CA7 /* ross_content@2x.png in Resources */,
 				5CB46B7B196832A800B66CA7 /* connected_people@2x.png in Resources */,
@@ -499,7 +508,6 @@
 				5CB46B541968327800B66CA7 /* roos_connection@2x.png in Resources */,
 				CFC22B141968512F00A06C3A /* LICENSE.txt in Resources */,
 				CFC22B2A1968557600A06C3A /* MyOrder.bundle in Resources */,
-				5CB46B7A196832A800B66CA7 /* connected_accounts_active@2x.png in Resources */,
 				5CB46B5B1968327800B66CA7 /* ross_picture@2x.png in Resources */,
 				5CB46B7E196832A800B66CA7 /* frank_wishlist@2x.png in Resources */,
 				CFC22B0D1968512F00A06C3A /* acknowledgments.md in Resources */,
@@ -521,6 +529,7 @@
 				5CB46B82196832A800B66CA7 /* off_bg@2x.png in Resources */,
 				5CB46B5C1968327800B66CA7 /* store_details.png in Resources */,
 				5CB46B8C196832A800B66CA7 /* toggle_knob_on@2x.png in Resources */,
+				5C0BDC5E1968663A00D5A40D /* roos_wishlist_frame@2x.png in Resources */,
 				5CB46B7C196832A800B66CA7 /* frank_image@2x.png in Resources */,
 				5CB46B80196832A800B66CA7 /* my_favorite_store@2x.png in Resources */,
 				5CB46B8D196832A800B66CA7 /* toggle_off.png in Resources */,
@@ -545,6 +554,7 @@
 				CFC22B131968512F00A06C3A /* SVProgressHUD.m in Sources */,
 				F56262A2196844E9002A2616 /* BaseViewController.m in Sources */,
 				5CB46ACE1968138600B66CA7 /* AppDelegate.m in Sources */,
+				5C0BDC621968707900D5A40D /* RosssViewController.m in Sources */,
 				5CB46B0F19681C9F00B66CA7 /* LoginScreenViewController.m in Sources */,
 				5CB46B4719682CDC00B66CA7 /* MainViewController.m in Sources */,
 				CFC22B171968512F00A06C3A /* TPKeyboardAvoidingTableView.m in Sources */,

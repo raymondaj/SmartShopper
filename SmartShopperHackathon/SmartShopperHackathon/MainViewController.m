@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.connectedAccountsImg.hidden = YES;
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(processNotificationCenterForBeacon:)
                                                  name:@"BEACONS_NOTIF_CENTER"
@@ -36,6 +36,7 @@
     facebookButton = [[UIButton alloc]initWithFrame:CGRectMake(120, 443, 50, 18) ];
     [facebookButton setImage:[UIImage imageNamed:@"toggle_off"] forState:UIControlStateNormal] ;
     [facebookButton addTarget:self action:@selector(facebookButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+
     [self.contentView addSubview:facebookButton];
     self.scrollView.contentSize = CGSizeMake(320, 350 + self.contentView.frame.size.height) ;
     // Do any additional setup after loading the view.
@@ -68,32 +69,37 @@
 -(IBAction)facebookButtonTouchUpInside:(id)sender
 {
     UIButton* selButton = (UIButton*)sender;
-    if ([selButton state] == UIControlStateNormal) {
+    if ([selButton isHighlighted]) {
+        [selButton setImage:[UIImage imageNamed:@"toggle_on"] forState:UIControlStateHighlighted];
         [selButton setImage:[UIImage imageNamed:@"toggle_off"] forState:UIControlStateNormal];
-        [selButton setHighlighted:YES];
+        [selButton setHighlighted:NO];
         
     }
     else
     {
         [selButton setImage:[UIImage imageNamed:@"toggle_on"] forState:UIControlStateNormal];
-        [selButton setHighlighted:NO];
+        [selButton setHighlighted:YES];
     }
     
 }
+-(IBAction)connectedPeopleButtonTouchUpInside:(id)sender
+{
+    [self performSegueWithIdentifier:@"toRossVC" sender:self];
+}
+
 - (IBAction)mainMenuButtonTouchUpInside:(id)sender {
     UIButton* selButton = (UIButton*)sender;
+    UIButton* connectedPeopleButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 80, 305, 82)];
+    UIImage *peopleImg = [UIImage imageNamed:@"connected_people"];
     switch ([sender tag]) {
         case 1:
-            if ([selButton state] == UIControlStateNormal) {
-                [selButton setImage:[UIImage imageNamed:@"connected_accounts_active"] forState:UIControlStateNormal];
-                [selButton setHighlighted:YES];
-                
-            }
-            else
-            {
-                [selButton setImage:[UIImage imageNamed:@"connected_accounts"] forState:UIControlStateHighlighted];
-                [selButton setHighlighted:NO];
-            }
+            self.connectedAccountsImg.hidden = NO;
+            [[self contentView] removeFromSuperview];
+            self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 380, 320, 800)];
+            [connectedPeopleButton setImage:peopleImg forState:UIControlStateNormal];
+        [connectedPeopleButton addTarget:self action:@selector(connectedPeopleButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+            [self.contentView addSubview:connectedPeopleButton];
+            [self.view addSubview:self.contentView];
         case 2:
             if ([selButton isSelected])
                 [selButton setSelected:NO];

@@ -75,8 +75,8 @@
 		CFC22B22196853CA00A06C3A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B20196853CA00A06C3A /* AddressBookUI.framework */; };
 		CFC22B24196853FE00A06C3A /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B23196853FE00A06C3A /* libxml2.2.dylib */; };
 		CFC22B261968541000A06C3A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B251968541000A06C3A /* libz.dylib */; };
-		CFC22B28196854D700A06C3A /* MyOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B27196854D700A06C3A /* MyOrder.framework */; };
 		CFC22B2A1968557600A06C3A /* MyOrder.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFC22B291968557600A06C3A /* MyOrder.bundle */; };
+		CFC22B2C196858D900A06C3A /* MyOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC22B2B196858D900A06C3A /* MyOrder.framework */; };
 		F56262A2196844E9002A2616 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F562629E196844E9002A2616 /* BaseViewController.m */; };
 		F56262A3196844E9002A2616 /* GeoLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F56262A0196844E9002A2616 /* GeoLocationManager.m */; };
 /* End PBXBuildFile section */
@@ -180,8 +180,8 @@
 		CFC22B20196853CA00A06C3A /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		CFC22B23196853FE00A06C3A /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		CFC22B251968541000A06C3A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		CFC22B27196854D700A06C3A /* MyOrder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyOrder.framework; path = "../../../../Downloads/MyOrder-Payments-iOS-SDK-master/MyOrder.framework"; sourceTree = "<group>"; };
 		CFC22B291968557600A06C3A /* MyOrder.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MyOrder.bundle; sourceTree = "<group>"; };
+		CFC22B2B196858D900A06C3A /* MyOrder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyOrder.framework; sourceTree = "<group>"; };
 		F562629D196844E9002A2616 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F562629E196844E9002A2616 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		F562629F196844E9002A2616 /* GeoLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocationManager.h; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC22B28196854D700A06C3A /* MyOrder.framework in Frameworks */,
+				CFC22B2C196858D900A06C3A /* MyOrder.framework in Frameworks */,
 				CFC22B24196853FE00A06C3A /* libxml2.2.dylib in Frameworks */,
 				CFC22B261968541000A06C3A /* libz.dylib in Frameworks */,
 				CFC22B1A1968538800A06C3A /* AVFoundation.framework in Frameworks */,
@@ -216,6 +216,7 @@
 		5CB46AB11968138600B66CA7 = {
 			isa = PBXGroup;
 			children = (
+				CFC22B2B196858D900A06C3A /* MyOrder.framework */,
 				CFC22B291968557600A06C3A /* MyOrder.bundle */,
 				CFC22AE61968512F00A06C3A /* external */,
 				5CB46AC31968138600B66CA7 /* SmartShopperHackathon */,
@@ -235,7 +236,6 @@
 		5CB46ABC1968138600B66CA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CFC22B27196854D700A06C3A /* MyOrder.framework */,
 				CFC22B251968541000A06C3A /* libz.dylib */,
 				CFC22B23196853FE00A06C3A /* libxml2.2.dylib */,
 				CFC22B1F196853CA00A06C3A /* AddressBook.framework */,
@@ -652,7 +652,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/d061824/Downloads/MyOrder-Payments-iOS-SDK-master",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartShopperHackathon/SmartShopperHackathon-Prefix.pch";
@@ -688,7 +688,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/d061824/Downloads/MyOrder-Payments-iOS-SDK-master",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartShopperHackathon/SmartShopperHackathon-Prefix.pch";

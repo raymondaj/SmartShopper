@@ -18,6 +18,7 @@
     IBOutlet UIView *connectionsView;
     UIButton* connectedPeopleButton;
     UIImage *peopleImg;
+    UIView * offerView;
 }
 
 @property (strong, nonatomic) IBOutlet UIButton *notificationBadge;

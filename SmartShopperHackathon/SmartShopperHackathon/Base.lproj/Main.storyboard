@@ -44,21 +44,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S1A-PG-4qT">
-                                <rect key="frame" x="267" y="20" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="my_favorite.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="notificationBadgeTrigger:" destination="2JO-hw-WdZ" eventType="touchUpInside" id="SbL-jw-n4w"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" id="iuf-bq-KOy" userLabel="connectionsView">
                                 <rect key="frame" x="340" y="142" width="160" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S1A-PG-4qT">
+                                <rect key="frame" x="215" y="7" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="notification_1.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notificationBadgeTrigger:" destination="2JO-hw-WdZ" eventType="touchUpInside" id="SbL-jw-n4w"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PbJ-mr-Vl0">
                                 <rect key="frame" x="0.0" y="63" width="328" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -170,6 +174,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sos-jf-Ypw">
+                                <rect key="frame" x="129" y="538" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -177,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1i-db-Ehe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1298" y="844"/>
+            <point key="canvasLocation" x="2820" y="730"/>
         </scene>
         <!--Offer Detail View Controller-->
         <scene sceneID="3hR-e3-dRc">
@@ -201,6 +212,16 @@
                                     <action selector="addToCart:" destination="Bpc-61-3Ye" eventType="touchUpInside" id="Htd-PR-G2e"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6dY-PO-Im6">
+                                <rect key="frame" x="15" y="69" width="35" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Bpc-61-3Ye" eventType="touchUpInside" id="kGZ-Bj-QyE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -211,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uge-sC-LWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750" y="811"/>
+            <point key="canvasLocation" x="1658" y="1479"/>
         </scene>
         <!--Rosss View Controller-->
         <scene sceneID="vkb-Il-uoG">
@@ -372,6 +393,7 @@
         <image name="login.png" width="320" height="568"/>
         <image name="my_favorite.png" width="54" height="61"/>
         <image name="my_favorite_store.png" width="54" height="79"/>
+        <image name="notification_1.png" width="34" height="34"/>
         <image name="offer_beacon.png" width="320" height="568"/>
         <image name="offer_details.png" width="320" height="568"/>
         <image name="roos_connection.png" width="52" height="81"/>

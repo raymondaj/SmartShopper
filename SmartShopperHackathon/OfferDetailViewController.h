@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface OfferDetailViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *backButton;
 - (IBAction)addToCart:(id)sender;
+- (IBAction)backButtonAction:(id)sender;
 
 @end

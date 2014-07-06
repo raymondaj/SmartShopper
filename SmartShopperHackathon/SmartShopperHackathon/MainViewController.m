@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     backButton.hidden = YES;
-    self.notificationBadge.hidden = YES;
+//    self.notificationBadge.hidden = YES;
     self.connectedAccountsImg.hidden = YES;
     
     [self performSelector:@selector(resetBeacons) withObject:nil afterDelay:5];
@@ -77,13 +77,20 @@
         NSString *msg = [NSString stringWithFormat:@"%@, %@, %@, %@", notificationCenterMessage [@"ALERT_BODY"],  notificationCenterMessage[UUID_STRING] , notificationCenterMessage[MAJOR_STRING] , notificationCenterMessage [MINOR_STRING]];
         
         NSLog(@"%@", msg);
+        
+//        self.notificationBadge.hidden = YES;
 
         [self showOffersScreen];
 
         return;
+        
     }else{
         NSLog(@"UIApplicationStateActive");
-        self.notificationBadge.hidden = NO;
+        
+        [UIView animateWithDuration:1.75 animations:^{
+        [self.notificationBadge setBackgroundImage:[UIImage imageNamed:@"notification_2"] forState:UIControlStateNormal];
+        }];
+        
     }
 }
 
@@ -172,14 +179,23 @@
     backButton.hidden = YES;
 //    [self.navigationController popViewControllerAnimated:YES];
 }
+- (IBAction)backButton1TouchUpInside{
+    [offerView removeFromSuperview];
+}
 - (void)showOffersScreen {
+    offerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
     UIButton* offerButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
     [offerButton addTarget:self action:@selector(offerButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     [offerButton setImage:[UIImage imageNamed:@"offer_beacon"] forState:UIControlStateNormal];
-    [self.view addSubview:offerButton];
+    [offerView addSubview:offerButton];
+    UIButton* backButton1 = [[UIButton alloc]initWithFrame:CGRectMake(0, 500, 320, 68)];
+    [backButton1 addTarget:self action:@selector(backButton1TouchUpInside) forControlEvents:UIControlEventTouchUpInside];
+    [offerView addSubview:backButton1];
+    [self.view addSubview:offerView];
 }
 
 - (IBAction)notificationBadgeTrigger:(id)sender {
+
     [self showOffersScreen];
 }
 

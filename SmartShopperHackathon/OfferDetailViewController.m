@@ -37,6 +37,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.view bringSubviewToFront:self.backButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,4 +71,9 @@
     [self.navigationController pushViewController:vc animated:YES];
 
 }
+
+- (IBAction)backButtonAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

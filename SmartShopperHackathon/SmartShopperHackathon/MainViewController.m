@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "AppDelegate.h"
 
 @interface MainViewController ()
 
@@ -27,7 +28,11 @@
 {
     [super viewDidLoad];
     backButton.hidden = YES;
+    self.notificationBadge.hidden = YES;
     self.connectedAccountsImg.hidden = YES;
+    
+    [self performSelector:@selector(resetBeacons) withObject:nil afterDelay:5];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(processNotificationCenterForBeacon:)
                                                  name:@"BEACONS_NOTIF_CENTER"
@@ -38,10 +43,14 @@
     [connectedPeopleButton setImage:peopleImg forState:UIControlStateNormal];
     [connectedPeopleButton addTarget:self action:@selector(connectedPeopleButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     
-    
-
     // Do any additional setup after loading the view.
 }
+
+- (void) resetBeacons{
+    AppDelegate *mainAppDelegate = (AppDelegate*)([UIApplication sharedApplication].delegate);
+    [mainAppDelegate resetDemo];
+}
+
 -(void)showPersonalProfile
 {
     [self.contentView removeFromSuperview];
@@ -58,16 +67,26 @@
 }
 
 - (void) processNotificationCenterForBeacon:(NSNotification *) notification{
+    
+    
     NSDictionary *notificationCenterMessage = notification.userInfo;
-    NSString *msg = [NSString stringWithFormat:@"%@, %@, %@, %@", notificationCenterMessage [@"ALERT_BODY"],  notificationCenterMessage[UUID_STRING] , notificationCenterMessage[MAJOR_STRING] , notificationCenterMessage [MINOR_STRING]];
     
-    NSLog(@"%@", msg);
-    UIButton* offerButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
-    [offerButton addTarget:self action:@selector(offerButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-    [offerButton setImage:[UIImage imageNamed:@"offer_beacon"] forState:UIControlStateNormal];
-    [self.view addSubview:offerButton];
+    NSNumber *origine = notificationCenterMessage[INVOCATION_ORIGINE_STRING];
     
+    if(origine != RANGING_ACTIVE){
+        NSString *msg = [NSString stringWithFormat:@"%@, %@, %@, %@", notificationCenterMessage [@"ALERT_BODY"],  notificationCenterMessage[UUID_STRING] , notificationCenterMessage[MAJOR_STRING] , notificationCenterMessage [MINOR_STRING]];
+        
+        NSLog(@"%@", msg);
+
+        [self showOffersScreen];
+
+        return;
+    }else{
+        NSLog(@"UIApplicationStateActive");
+        self.notificationBadge.hidden = NO;
+    }
 }
+
 -(IBAction)offerButtonTouchUpInside:(id)sender
 {
     [self performSegueWithIdentifier:@"toOfferDetailsVC" sender:self];
@@ -153,4 +172,15 @@
     backButton.hidden = YES;
 //    [self.navigationController popViewControllerAnimated:YES];
 }
+- (void)showOffersScreen {
+    UIButton* offerButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
+    [offerButton addTarget:self action:@selector(offerButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    [offerButton setImage:[UIImage imageNamed:@"offer_beacon"] forState:UIControlStateNormal];
+    [self.view addSubview:offerButton];
+}
+
+- (IBAction)notificationBadgeTrigger:(id)sender {
+    [self showOffersScreen];
+}
+
 @end

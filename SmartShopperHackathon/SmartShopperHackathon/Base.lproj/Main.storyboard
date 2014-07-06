@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0YF-in-IH8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0YF-in-IH8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -44,6 +44,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S1A-PG-4qT">
+                                <rect key="frame" x="267" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="my_favorite.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notificationBadgeTrigger:" destination="2JO-hw-WdZ" eventType="touchUpInside" id="SbL-jw-n4w"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" id="iuf-bq-KOy" userLabel="connectionsView">
                                 <rect key="frame" x="340" y="142" width="160" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,6 +147,7 @@
                         <outlet property="connectedAccountsImg" destination="kmd-KQ-Rzz" id="skm-iW-ujg"/>
                         <outlet property="connectionsView" destination="iuf-bq-KOy" id="biC-kY-aW7"/>
                         <outlet property="contentView" destination="xvo-Tl-OKZ" id="bqY-sh-Bzb"/>
+                        <outlet property="notificationBadge" destination="S1A-PG-4qT" id="BAZ-hi-cVe"/>
                         <outlet property="offerImgView" destination="NrN-ww-G6n" id="tbc-zV-OCj"/>
                         <outlet property="scrollView" destination="PbJ-mr-Vl0" id="ata-4m-2AP"/>
                         <segue destination="zlz-WR-Znd" kind="push" identifier="toRossVC" id="sxN-kc-AYY"/>

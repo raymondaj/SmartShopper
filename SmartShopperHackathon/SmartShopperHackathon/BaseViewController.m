@@ -67,7 +67,7 @@
 -(void) pushNotificationCenter:(UILocalNotification *) notification{
     NSLog(@"pushNotificationCenter");
     
-    NSDictionary *notificationCenterMessage = @{UUID_STRING:notification.userInfo [UUID_STRING], MAJOR_STRING:notification.userInfo[MAJOR_STRING], MINOR_STRING:notification.userInfo[MINOR_STRING], @"ALERT_BODY":notification.alertBody};
+    NSDictionary *notificationCenterMessage = @{UUID_STRING:notification.userInfo [UUID_STRING], MAJOR_STRING:notification.userInfo[MAJOR_STRING], MINOR_STRING:notification.userInfo[MINOR_STRING], INVOCATION_ORIGINE_STRING:notification.userInfo[INVOCATION_ORIGINE_STRING], @"ALERT_BODY":notification.alertBody};
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"BEACONS_NOTIF_CENTER" object:self userInfo:notificationCenterMessage];
 }

@@ -19,6 +19,11 @@
     UIButton* connectedPeopleButton;
     UIImage *peopleImg;
 }
+
+@property (strong, nonatomic) IBOutlet UIButton *notificationBadge;
+- (IBAction)notificationBadgeTrigger:(id)sender;
+
+
 @property (weak, nonatomic) IBOutlet UIImageView *offerImgView;
 @property (weak, nonatomic) IBOutlet UIImageView *connectedAccountsImg;
 - (IBAction)forwardButtonTouchUpInside:(id)sender;

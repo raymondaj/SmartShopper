@@ -26,9 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    favStoreButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 0, 305, 200)];
+    favStoreButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 0, 305, 150)];
     storeDetailsImg = [UIImage imageNamed:@"store_details"];
-    [favStoreButton setImage:storeDetailsImg forState:UIControlStateNormal];
+    [favStoreButton setBackgroundImage:storeDetailsImg forState:UIControlStateNormal];
 
     connectionsView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ross_content"]];
     wishListview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fav_products"]];
@@ -41,7 +41,7 @@
 -(void)addToContentView:(UIView*)view
 {
     [self.contentView removeFromSuperview];
-    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(5, 420, view.frame.size.width, view.frame.size.height)];//;
+    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(10, 420, 300, view.frame.size.height)];//;
     [self.contentView addSubview:view];
     [self.scrollView addSubview:self.contentView];
     self.scrollView.contentSize = CGSizeMake(320, 450 + self.contentView.frame.size.height) ;
@@ -94,7 +94,7 @@
                 self.storesFrameView.hidden = NO;
                 self.favFrameView.hidden = YES;
                 self.connectionFrameView.hidden = YES;
-            [favStoreview setFrame:CGRectMake(favStoreview.frame.origin.x, favStoreview.frame.origin.y, 305, 275)];
+            [favStoreview setFrame:CGRectMake(10, favStoreview.frame.origin.y, 250, 150)];
                 [self  addToContentView:favStoreview];
             break;
             

@@ -21,7 +21,7 @@
     UILocalNotification * localNotif = [[UILocalNotification alloc] init];
     localNotif.alertAction = @"to see the offer";
     localNotif.applicationIconBadgeNumber = 1;
-    localNotif.alertBody = @"Buy at our store and get 20% off for your wife's birthday gift";
+    localNotif.alertBody = @"Greetings from BASALT!! Buy at our store and get 25%% off for your wife's birthday gift";
     localNotif.soundName = UILocalNotificationDefaultSoundName;
     localNotif.fireDate = [NSDate date];
     

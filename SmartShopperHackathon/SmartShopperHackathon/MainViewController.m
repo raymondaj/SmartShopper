@@ -38,7 +38,7 @@
                                                  name:@"BEACONS_NOTIF_CENTER"
                                                object:nil];
     [self  showPersonalProfile];
-    connectedPeopleButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 40, 305, 163)];
+    connectedPeopleButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 40, 300, 163)];
     peopleImg = [UIImage imageNamed:@"connected_people"];
     [connectedPeopleButton setImage:peopleImg forState:UIControlStateNormal];
     [connectedPeopleButton addTarget:self action:@selector(connectedPeopleButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
@@ -54,7 +54,7 @@
 -(void)showPersonalProfile
 {
     [self.contentView removeFromSuperview];
-    self.contentView = [[UIView alloc]initWithFrame:CGRectMake(0, 400, 320, 1000) ];
+    self.contentView = [[UIView alloc]initWithFrame:CGRectMake(10, 400, 305, 1100) ];
     [self.contentView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"frank_profile_detail"]]];
     facebookButton = [[UIButton alloc]initWithFrame:CGRectMake(120, 443, 50, 18) ];
     [facebookButton setImage:[UIImage imageNamed:@"toggle_off"] forState:UIControlStateNormal] ;

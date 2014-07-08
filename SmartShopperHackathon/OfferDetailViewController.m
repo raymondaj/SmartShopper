@@ -37,6 +37,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.view bringSubviewToFront:self.backButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +59,8 @@
 */
 
 - (IBAction)addToCart:(id)sender {
+    [UIColor MO_setBackgroundColor:[UIColor colorWithRed:244.0/255.0 green:161.0/255.0 blue:51.0/255.0 alpha:1.0]];
+    
     MOOrder *order = [MOOrder new];
     order.externalOrderId = @"123456";
     [order addItemWithName:@"CLIC Necklace" price:84.75 quantity:1];
@@ -69,4 +73,9 @@
     [self.navigationController pushViewController:vc animated:YES];
 
 }
+
+- (IBAction)backButtonAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end

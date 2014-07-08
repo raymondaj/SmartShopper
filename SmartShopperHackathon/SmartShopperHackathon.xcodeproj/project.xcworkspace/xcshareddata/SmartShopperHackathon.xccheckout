@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>EF7A2D7E-769A-47FB-9EB3-98B147E9CB5A</string>
+	<string>CBC16365-1D18-4B32-8EDB-4EBA022646D7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SmartShopperHackathon</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>65579F73-D03C-4C21-86CA-972BB62AA3C7</key>
-		<string>https://github.com/raymondaj/SmartShopper</string>
+		<key>70547B60-1D97-4653-904F-45A7A67B0168</key>
+		<string>https://github.com/raymondaj/SmartShopper.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SmartShopperHackathon/SmartShopperHackathon.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>65579F73-D03C-4C21-86CA-972BB62AA3C7</key>
+		<key>70547B60-1D97-4653-904F-45A7A67B0168</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/raymondaj/SmartShopper</string>
+	<string>https://github.com/raymondaj/SmartShopper.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>65579F73-D03C-4C21-86CA-972BB62AA3C7</string>
+	<string>70547B60-1D97-4653-904F-45A7A67B0168</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>65579F73-D03C-4C21-86CA-972BB62AA3C7</string>
+			<string>70547B60-1D97-4653-904F-45A7A67B0168</string>
 			<key>IDESourceControlWCCName</key>
 			<string>SmartShopper</string>
 		</dict>

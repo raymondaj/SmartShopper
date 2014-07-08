@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "AppDelegate.h"
 
 @interface MainViewController ()
 
@@ -27,25 +28,33 @@
 {
     [super viewDidLoad];
     backButton.hidden = YES;
+//    self.notificationBadge.hidden = YES;
     self.connectedAccountsImg.hidden = YES;
+    
+    [self performSelector:@selector(resetBeacons) withObject:nil afterDelay:5];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(processNotificationCenterForBeacon:)
                                                  name:@"BEACONS_NOTIF_CENTER"
                                                object:nil];
     [self  showPersonalProfile];
-    connectedPeopleButton = [[UIButton alloc] initWithFrame:CGRectMake(5, 40, 305, 163)];
+    connectedPeopleButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 40, 300, 163)];
     peopleImg = [UIImage imageNamed:@"connected_people"];
     [connectedPeopleButton setImage:peopleImg forState:UIControlStateNormal];
     [connectedPeopleButton addTarget:self action:@selector(connectedPeopleButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     
-    
-
     // Do any additional setup after loading the view.
 }
+
+- (void) resetBeacons{
+    AppDelegate *mainAppDelegate = (AppDelegate*)([UIApplication sharedApplication].delegate);
+    [mainAppDelegate resetDemo];
+}
+
 -(void)showPersonalProfile
 {
     [self.contentView removeFromSuperview];
-    self.contentView = [[UIView alloc]initWithFrame:CGRectMake(0, 400, 320, 1000) ];
+    self.contentView = [[UIView alloc]initWithFrame:CGRectMake(10, 400, 305, 1100) ];
     [self.contentView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"frank_profile_detail"]]];
     facebookButton = [[UIButton alloc]initWithFrame:CGRectMake(120, 443, 50, 18) ];
     [facebookButton setImage:[UIImage imageNamed:@"toggle_off"] forState:UIControlStateNormal] ;
@@ -58,16 +67,33 @@
 }
 
 - (void) processNotificationCenterForBeacon:(NSNotification *) notification{
+    
+    
     NSDictionary *notificationCenterMessage = notification.userInfo;
-    NSString *msg = [NSString stringWithFormat:@"%@, %@, %@, %@", notificationCenterMessage [@"ALERT_BODY"],  notificationCenterMessage[UUID_STRING] , notificationCenterMessage[MAJOR_STRING] , notificationCenterMessage [MINOR_STRING]];
     
-    NSLog(@"%@", msg);
-    UIButton* offerButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
-    [offerButton addTarget:self action:@selector(offerButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-    [offerButton setImage:[UIImage imageNamed:@"offer_beacon"] forState:UIControlStateNormal];
-    [self.view addSubview:offerButton];
+    NSNumber *origine = notificationCenterMessage[INVOCATION_ORIGINE_STRING];
     
+    if(origine != RANGING_ACTIVE){
+        NSString *msg = [NSString stringWithFormat:@"%@, %@, %@, %@", notificationCenterMessage [@"ALERT_BODY"],  notificationCenterMessage[UUID_STRING] , notificationCenterMessage[MAJOR_STRING] , notificationCenterMessage [MINOR_STRING]];
+        
+        NSLog(@"%@", msg);
+        
+//        self.notificationBadge.hidden = YES;
+
+        [self showOffersScreen];
+
+        return;
+        
+    }else{
+        NSLog(@"UIApplicationStateActive");
+        
+        [UIView animateWithDuration:1.75 animations:^{
+        [self.notificationBadge setBackgroundImage:[UIImage imageNamed:@"notification_2"] forState:UIControlStateNormal];
+        }];
+        
+    }
 }
+
 -(IBAction)offerButtonTouchUpInside:(id)sender
 {
     [self performSegueWithIdentifier:@"toOfferDetailsVC" sender:self];
@@ -153,4 +179,24 @@
     backButton.hidden = YES;
 //    [self.navigationController popViewControllerAnimated:YES];
 }
+- (IBAction)backButton1TouchUpInside{
+    [offerView removeFromSuperview];
+}
+- (void)showOffersScreen {
+    offerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+    UIButton* offerButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
+    [offerButton addTarget:self action:@selector(offerButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    [offerButton setImage:[UIImage imageNamed:@"offer_beacon"] forState:UIControlStateNormal];
+    [offerView addSubview:offerButton];
+    UIButton* backButton1 = [[UIButton alloc]initWithFrame:CGRectMake(0, 500, 320, 68)];
+    [backButton1 addTarget:self action:@selector(backButton1TouchUpInside) forControlEvents:UIControlEventTouchUpInside];
+    [offerView addSubview:backButton1];
+    [self.view addSubview:offerView];
+}
+
+- (IBAction)notificationBadgeTrigger:(id)sender {
+
+    [self showOffersScreen];
+}
+
 @end

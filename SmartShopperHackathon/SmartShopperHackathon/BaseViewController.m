@@ -17,12 +17,13 @@
 -(void) pushSystemNotification:(NSDictionary *) beacon{
     NSLog(@"pushLocalNotification");
     
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
     UILocalNotification * localNotif = [[UILocalNotification alloc] init];
     localNotif.alertAction = @"to see the offer";
-    //localNotif.applicationIconBadgeNumber = 1;
-    localNotif.alertBody = @"Buy at our store and get 20% off for your wife's birthday gift";
+    localNotif.applicationIconBadgeNumber = 1;
+    localNotif.alertBody = @"Greetings from BASALT!! Buy at our store and get 25%% off for your wife's birthday gift";
     localNotif.soundName = UILocalNotificationDefaultSoundName;
-    localNotif.fireDate = [NSDate dateWithTimeIntervalSinceNow:1];
+    localNotif.fireDate = [NSDate date];
     
     localNotif.userInfo = beacon;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
@@ -66,7 +67,7 @@
 -(void) pushNotificationCenter:(UILocalNotification *) notification{
     NSLog(@"pushNotificationCenter");
     
-    NSDictionary *notificationCenterMessage = @{UUID_STRING:notification.userInfo [UUID_STRING], MAJOR_STRING:notification.userInfo[MAJOR_STRING], MINOR_STRING:notification.userInfo[MINOR_STRING], @"ALERT_BODY":notification.alertBody};
+    NSDictionary *notificationCenterMessage = @{UUID_STRING:notification.userInfo [UUID_STRING], MAJOR_STRING:notification.userInfo[MAJOR_STRING], MINOR_STRING:notification.userInfo[MINOR_STRING], INVOCATION_ORIGINE_STRING:notification.userInfo[INVOCATION_ORIGINE_STRING], @"ALERT_BODY":notification.alertBody};
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"BEACONS_NOTIF_CENTER" object:self userInfo:notificationCenterMessage];
 }

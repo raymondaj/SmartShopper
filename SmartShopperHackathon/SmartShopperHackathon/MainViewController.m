@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     backButton.hidden = YES;
-//    self.notificationBadge.hidden = YES;
+    self.notificationBadge.hidden = NO;
     self.connectedAccountsImg.hidden = YES;
     
     [self performSelector:@selector(resetBeacons) withObject:nil afterDelay:5];
